@@ -40,7 +40,7 @@ gulp.task('minify-img', function() {
                 { verbose: true }
             )
         )
-        .pipe(gulp.dest('./public'))
+        .pipe(gulp.dest('./public/p'))
 });
 // task
 gulp.task('default', gulp.series(
