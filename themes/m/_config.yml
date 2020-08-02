@@ -1,0 +1,103 @@
+# Site Settings
+m:
+  dev_mode: true # do not change unless you know what you are doing
+  syntax: "-" # syntax
+  opacity: "0.87" # card opacity
+  border_radius: "4px" # card border-radius
+  max_width: "720px" # container max width
+  layout: "dark" # appbar/drawer layout, light / dark / auto
+  # body{background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}
+  # https://i.loli.net/2020/07/26/d3yD9Pn2LYGFE6r.jpg
+  css: |
+    body{background:url('https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg'),rgba(0,0,0,.39);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
+
+mdui:
+  primary: "blue" # https://mdui.org/docs/color
+  accent: "blue" # https://mdui.org/docs/color
+  layout: "auto" # card layout, light / dark / auto
+  shadow: "0" # card shadow, 0-16
+  hoverable: true # card hoverable, false / true
+  card_media_covered: gradient # card media covered, normal / gradient / transparent 
+
+head:
+  theme_color: "#2196F3"
+  favicon: # 16*16 / 32*32 / 48*48
+  high_res_icon: # 192*192
+  apple_touch_icon: # 180*180
+  preconnect:
+  prefetch:
+  dns_prefetch:
+    - "//cdn.jsdelivr.net"
+    - "//pximg.917.moe"
+    - "//i.loli.net"
+    - "//utteranc.es"
+
+url:
+  rss: "/atom.xml"
+  avatar: "/about/"
+  search: "/search/"
+  links: "/links/"
+  hosted_on: "https://github.com/kwaa/kwaa.github.io"
+
+appbar:
+  scroll_hide: true
+  title: true
+  search: true
+  rss: false
+
+drawer:
+  avatar: "https://oss.917.moe/chino.webp"
+  toc: true
+  search: false
+  home: true
+  archives: true
+  categories: true
+  tags: true
+  links: true
+  rss: false
+
+footer:
+  since: "2019"
+  hosted_on: "Github"
+  custom: |
+    <a href="https://kwaa.dev/atom.xml">RSS</a> | BG: <a href="https://www.pixiv.net/artworks/61082386">星の唄</a><br>
+
+open_graph:
+  google_analytics:
+  twitter:
+  google_plus:
+  fb_admins:
+  fb_app_id:
+
+posts:
+  thumbnail_title: false # true /false
+  index_content: auto # false / auto / excerpt / content
+  license: '<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
+
+comments:
+  use: utterances # utterances
+  utterances:
+    repo: kwaa/comments
+    issue_term: pathname
+    theme: github-light
+    src: "https://utteranc.es/client.js"
+
+search:
+  use: google # google
+  google:
+    search_site: "kwaa.dev"
+
+plugins:
+  pjax: true
+  pangu: true
+  prism: true
+  busuanzi: true
+
+vendors:
+  mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" # 1.0.0
+  mdui_js: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" # 1.0.0
+  pjax_js: "https://cdn.jsdelivr.net/npm/pjax/pjax.js"
+  pangu_js: "https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" # 4.0.7
+  prism_js: "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" # 1.2.0
+  prism_theme: "https://cdn.jsdelivr.net/gh/PrismJS/prism-themes/themes/prism-material-dark.css"
+  busuanzi_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" # 2.3
