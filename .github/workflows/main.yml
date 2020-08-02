@@ -15,7 +15,7 @@ jobs:
           node-version: '14'
           check-latest: true
       - name: Build
-        run: npm i -g hexo gulp && npm install && hexo generate && gulp
+        run: npm i -g hexo gulp && npm install && hexo generate
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
