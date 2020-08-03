@@ -28,7 +28,6 @@
 <meta name="theme-color" content="<%= theme.head.theme_color %>">
 <% } %>
 
-<%- open_graph({twitter_id: theme.open_graph.twitter, google_plus: theme.open_graph.google_plus, fb_admins: theme.open_graph.fb_admins, fb_app_id: theme.open_graph.fb_app_id}) %>
 <% if (theme.url.rss){ %>
     <% if(config.feed.type == "atom"){ %>
         <link rel=alternate type="application/atom+xml" href="<%= theme.url.rss || '#' %>">
