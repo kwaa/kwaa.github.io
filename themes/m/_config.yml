@@ -9,7 +9,9 @@ m:
   # body{background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);}
   # https://i.loli.net/2020/07/26/d3yD9Pn2LYGFE6r.jpg
   css: |
-    body{background:url('https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg'),rgba(0,0,0,.39);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
+    body{background-color: rgba(0,0,0,.39);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
+  init: |
+    $("body").css('background-image', 'url("https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg")')
 
 mdui:
   primary: "blue" # https://mdui.org/docs/color
@@ -26,11 +28,12 @@ head:
   apple_touch_icon: # 180*180
   preconnect:
   prefetch:
+    - "//pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg"
   dns_prefetch:
     - "//cdn.jsdelivr.net"
-    - "//pximg.917.moe"
     - "//i.loli.net"
     - "//utteranc.es"
+  stylesheet:
 
 url:
   rss: "/atom.xml"
@@ -91,8 +94,7 @@ plugins:
   pjax: true
   pangu: true
   prism: true
-  busuanzi: true
-  lazyload: true
+  script:
 
 vendors:
   mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" # 1.0.0
