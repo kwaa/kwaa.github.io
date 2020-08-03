@@ -26,13 +26,17 @@ head:
   favicon: # 16*16 / 32*32 / 48*48
   high_res_icon: # 192*192
   apple_touch_icon: # 180*180
+  preload:
+    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/icons/material-icons/MaterialIcons-Regular.woff2" as="font" crossorigin'
+    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin'
+    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin'
+    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Bold.woff2" as="font" crossorigin'
+    - 'href="https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg" as="image" crossorigin'
   preconnect:
+    - 'href="//cdn.jsdelivr.net"'
   prefetch:
-    - "//pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg"
   dns_prefetch:
-    - "//cdn.jsdelivr.net"
-    - "//i.loli.net"
-    - "//utteranc.es"
+    - 'href="//i.loli.net"'
   stylesheet:
 
 url:
