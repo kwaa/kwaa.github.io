@@ -31,9 +31,9 @@ head:
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Bold.woff2" as="font" crossorigin'
-    - 'href="https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg" as="image" crossorigin'
   preconnect:
     - 'href="//cdn.jsdelivr.net"'
+    - 'href="//pximg.kwaa.moe"'
   prefetch:
   dns_prefetch:
     - 'href="//i.loli.net"'
