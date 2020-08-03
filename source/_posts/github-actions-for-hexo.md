@@ -67,7 +67,7 @@ gulp.task('minify-img', function() {
                 { verbose: true }
             )
         )
-        .pipe(gulp.dest('./public'))
+        .pipe(gulp.dest('./public/p'))
 });
 // task
 gulp.task('default', gulp.series(
@@ -89,7 +89,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Use Node.js 10.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v2-beta
         with:
           node-version: '14'
