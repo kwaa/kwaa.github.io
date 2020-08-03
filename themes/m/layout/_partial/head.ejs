@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <% if(config.language !== null) { %>lang="<%- config.language.substring(0,2) %>" <% } %>>
-
 <head>
     <%- fragment_cache ('head_common', function (){
         return partial ('_partial/head_common');
