@@ -100,12 +100,19 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: m
 
-# Search
+# hexo-generator-search
 search:
   path: search.json
   field: post
   content: true
 
+# hexo-native-lazy-load
+lazy_load:
+  enable: true
+  all: true
+  fallback: false
+  width_height: true
+  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
