@@ -4,15 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <% if(theme.head.preconnect) { theme.head.preload.forEach(function(content) { %>
-    <link rel="preload" <%= content %>>
+    <link rel="preload" <%- content %>>
 <% })} if(theme.head.preconnect) { theme.head.preconnect.forEach(function(content) { %>
-    <link rel="preconnect" <%= content %>>
+    <link rel="preconnect" <%- content %>>
 <% })} if(theme.head.prefetch) { theme.head.prefetch.forEach(function(content) { %>
-    <link rel="prefetch" <%= content %>>
+    <link rel="prefetch" <%- content %>>
 <% })} if(theme.head.dns_prefetch) { theme.head.dns_prefetch.forEach(function(content) { %>
-    <link rel="dns-prefetch" <%= content %>>
+    <link rel="dns-prefetch" <%- content %>>
 <% })} if(theme.head.stylesheet) { theme.head.stylesheet.forEach(function(content) { %>
-    <link rel="stylesheet" <%= content %>>
+    <link rel="stylesheet" <%- content %>>
 <% })} %>
 
 <%- css(theme.vendors.mdui_css) %>
