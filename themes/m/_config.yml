@@ -92,11 +92,12 @@ plugins:
   pangu: true
   prism: true
   busuanzi: true
+  lazyload: true
 
 vendors:
   mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" # 1.0.0
   mdui_js: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" # 1.0.0
-  pjax_js: "https://cdn.jsdelivr.net/npm/pjax/pjax.js"
+  pjax_js: "https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"
   pangu_js: "https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" # 4.0.7
   prism_js: "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" # 1.2.0
   prism_theme: "https://cdn.jsdelivr.net/gh/PrismJS/prism-themes/themes/prism-material-dark.css"

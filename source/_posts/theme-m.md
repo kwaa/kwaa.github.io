@@ -3,7 +3,7 @@ title: "Introducting Theme-M"
 date: 2020-07-26 15:00:00
 updated: 2020-07-26 15:00:00
 comment: true
-thumbnail: https://i.loli.net/2019/10/19/nQ91SHwC8afGeBX.jpg
+thumbnail: https://i.loli.net/2020/08/03/wQGcCKZiB8Y6gXf.png
 categories:
 - 折腾
 tags:
