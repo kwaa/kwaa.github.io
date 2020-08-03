@@ -106,13 +106,6 @@ search:
   field: post
   content: true
 
-# hexo-native-lazy-load
-lazy_load:
-  enable: true
-  all: true
-  fallback: false
-  width_height: true
-  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
