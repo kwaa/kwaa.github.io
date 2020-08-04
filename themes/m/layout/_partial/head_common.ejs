@@ -3,7 +3,7 @@
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
-<% if(theme.head.preconnect) { theme.head.preload.forEach(function(content) { %>
+<% if(theme.head.preload) { theme.head.preload.forEach(function(content) { %>
     <link rel="preload" <%- content %>>
 <% })} if(theme.head.preconnect) { theme.head.preconnect.forEach(function(content) { %>
     <link rel="preconnect" <%- content %>>

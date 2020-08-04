@@ -44,5 +44,5 @@ gulp.task('minify-img', function() {
 });
 // task
 gulp.task('default', gulp.series(
-    'minify-html','minify-inline','minify-img'
+    'minify-html','minify-inline'
 ));

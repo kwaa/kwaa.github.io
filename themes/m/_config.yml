@@ -8,9 +8,8 @@ m:
   layout: "dark" # appbar/drawer layout, light / dark / auto
   # https://pximg.kwaa.moe/img-original/img/2017/01/23/23/51/08/61082386_p0.jpg
   css: |
-    body{background-color: rgba(0,0,0,.39);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
+    body{background:url("https://i.loli.net/2020/08/04/oKlCG1pSxjb2hwT.jpg"), rgba(0,0,0,.39);background-repeat:no-repeat;background-position:center center;background-size:cover;background-attachment:fixed;background-blend-mode:multiply;}
   init: |
-    $("body").css('background-image', 'url("https://i.loli.net/2020/08/04/oKlCG1pSxjb2hwT.jpg")')
 
 mdui:
   primary: "blue" # https://mdui.org/docs/color
@@ -94,7 +93,7 @@ search:
 
 plugins:
   pjax: true
-  pangu: true
+  pangu: false
   prism: true
   script:
 
