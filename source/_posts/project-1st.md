@@ -38,11 +38,11 @@ Project 1ST 是由一对六单元耳机头，两条 2.5mm TRRS 对录线和一�
 
 大概像是这样：
 
-![demo](https://kwaa.dev/p/project-1st/demo.png)
+![demo](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-1st/demo.png)
 
 2.5mm 插针定义：
 
-![trrs](https://kwaa.dev/p/project-1st/trrs.png)
+![trrs](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-1st/trrs.png)
 
 <!-- more -->
 

@@ -19,7 +19,7 @@
         title = __('common.tag') + ': ' + page.tag;
     }
     %>
-    <title><% if (title){ %><%= title %> <%= theme.m.syntax %> <% } %><%= config.title %></title>
+    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <link rel="canonical" href="<%= config.url + url_for(page.path).replace('index.html', '') %>">
     <%- open_graph({twitter_id: theme.open_graph.twitter, google_plus: theme.open_graph.google_plus, fb_admins: theme.open_graph.fb_admins, fb_app_id: theme.open_graph.fb_app_id}) %>
 </head>

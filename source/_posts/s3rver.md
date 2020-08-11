@@ -5,6 +5,9 @@ updated: 2020-02-23 10:10:10
 comment: true
 categories:
 - 折腾
+tags:
+- 服务器
+- Arch Linux
 ---
 新的一年我终于有预算在家里摆一小只服务器了。
 <!-- more -->

@@ -52,8 +52,8 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
-  enable: trye
-  preprocess: true
+  enable: true
+  preprocess: false
   line_number: false
   tab_replace: ''
 

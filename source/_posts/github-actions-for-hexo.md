@@ -14,6 +14,8 @@ tags:
 区别是加入了 gulp ，并且更新一波版本号。
 因为 M Refresh 设计之初就**没有放在本地的 css,js 文件**，所以也不需要 gulp-clean-css 和 gulp-uglify。
 
+<!-- more -->
+
 安装：
 
 ``` bash

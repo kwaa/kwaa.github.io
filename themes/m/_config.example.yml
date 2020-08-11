@@ -83,8 +83,6 @@ search:
 plugins:
   pjax: false
   pangu: false
-  prism: false
-  busuanzi: false
 
 vendors:
   mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" # 1.0.0

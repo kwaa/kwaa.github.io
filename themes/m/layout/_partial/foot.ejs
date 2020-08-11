@@ -1,8 +1,6 @@
 <%- js(theme.vendors.mdui_js) %>
 <% if(theme.plugins.pangu == true) { %>
     <%- js(theme.vendors.pangu_js) %>
-<% } if(theme.plugins.prism == true) { %>
-    <%- js(theme.vendors.prism_js) %>
 <% } if(theme.plugins.script) { theme.plugins.script.forEach(function(link) { %>
     <script src="<%= link %>"></script>
 <% })} %>
@@ -12,8 +10,6 @@
         $(".mdui-container-fluid").css('opacity', '1');
         <% if(theme.plugins.pangu == true) { %>
             pangu.autoSpacingPage();
-        <% } if(theme.plugins.prism == true) { %>
-            Prism.highlightAll();
         <% } if(theme.m.init) { %>
             <%- theme.m.init %>
         <% } %>

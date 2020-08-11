@@ -65,7 +65,7 @@ EST65QB02 只需要串联电容即可，2389D我打算压一下极高频部分�
 
 AXE 的分频版算是我第一个原创 PCB 设计，线路也比较简单。原理图：
 
-![SCHEMATIC](https://kwaa.dev/p/project-axe/schematic.png)
+![SCHEMATIC](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-axe/schematic.png)
 
 电容/电阻焊盘使用了 0805 规格，一共七个。目前我还没有完成 PCB 设计，先做一些耳机练手再继续吧。
 
@@ -86,7 +86,7 @@ UPDATE: 无论如何，我打算先把原本的八单元方案做出来自用。
 面板打算使用某宝买的银箔碎碳板，原本貌似是刀柄料。
 太好看了！
 
-![CARBON](https://kwaa.dev/p/project-axe/carbon.jpg)
+![CARBON](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-axe/carbon.jpg)
 
 ## 总结
 

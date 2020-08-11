@@ -8,7 +8,7 @@
             style: 'none',
             separator: ' '
         }) %> <%= theme.m.syntax %></span><% } %>
-        <span mdui-tooltip="{content:'<%= __("post.date") %><%- date(post.date, "YYYY-MM-DD") %><% if(post.updated) { %><br><%= __("post.updated") %><%- date(post.updated, "YYYY-MM-DD") %><% } %>'}"><%- date(post.date, "YYYY-MM-DD") %> <%= theme.m.syntax %></span>
+        <span mdui-tooltip="{content:'<%= __("post.date") %><%- date(post.date, "YYYY-MM-DD hh:mm") %><% if(post.updated) { %><br><%= __("post.updated") %><%- date(post.updated, "YYYY-MM-DD hh:mm") %><% } %>'}"><%- date(post.date, "YYYY-MM-DD") %> <%= theme.m.syntax %></span>
         <span><%= post.path %></span>
     </div>
 </div>
