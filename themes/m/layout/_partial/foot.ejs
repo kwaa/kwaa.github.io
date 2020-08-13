@@ -5,7 +5,6 @@
     <script src="<%= link %>"></script>
 <% })} %>
 <script>
-    setTimeout(() => {
     var $ = mdui.$;
     function fadeIn() {
         $(".mdui-container-fluid").css('opacity', '1');
@@ -14,12 +13,11 @@
         <% } if(theme.m.init) { %>
             <%- theme.m.init %>
         <% } %>
-    };fadeIn()}, 0);
+    };fadeIn()}
 </script>
 <% if(theme.plugins.pjax == true) { %>
 <%- js(theme.vendors.pjax_js) %>
 <script>
-    setTimeout(() => {
     var pjax = new Pjax({
         selectors: [
             "title",
@@ -31,6 +29,6 @@
         $(".mdui-container-fluid").css('opacity', '0');
     }
     document.addEventListener('pjax:send', fadeOut)
-    document.addEventListener("pjax:complete", fadeIn)}, 0);
+    document.addEventListener("pjax:complete", fadeIn)}
 </script>
 <% } %>
