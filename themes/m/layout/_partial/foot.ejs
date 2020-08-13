@@ -13,7 +13,7 @@
         <% } if(theme.m.init) { %>
             <%- theme.m.init %>
         <% } %>
-    };fadeIn()}
+    };fadeIn()
 </script>
 <% if(theme.plugins.pjax == true) { %>
 <%- js(theme.vendors.pjax_js) %>
@@ -29,6 +29,6 @@
         $(".mdui-container-fluid").css('opacity', '0');
     }
     document.addEventListener('pjax:send', fadeOut)
-    document.addEventListener("pjax:complete", fadeIn)}
+    document.addEventListener("pjax:complete", fadeIn)
 </script>
 <% } %>
