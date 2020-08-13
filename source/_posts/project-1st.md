@@ -46,8 +46,6 @@ Project 1ST 是由一对六单元耳机头，两条 2.5mm TRRS 对录线和一�
 
 ![trrs](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-1st/trrs.png)
 
-<!-- more -->
-
 ### 模拟信号处理器
 
 > ASP-NE0「MIXER」
