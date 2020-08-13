@@ -14,6 +14,8 @@ tags:
 偶然看到[写 Rust 代码，领树莓派](https://www.v2ex.com/t/693807)
 这种好事怎么能错过？虽然只能领到 Zero W；我本来就对 Rust 比较感兴趣，这次正好尝试一下。
 
+<!-- more -->
+
 先按照[教程](https://www.secondstate.io/articles/get-started-with-rust-functions-in-node-zh/)走吧：
 为了省事我用的 docker，但实际上一点都不省事。
 ssvm 要求 Ubuntu 20.04，对我服务器装着的纯血 Arch 不太友好。
