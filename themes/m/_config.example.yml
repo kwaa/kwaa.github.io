@@ -15,6 +15,7 @@ mdui:
   shadow: "1" # card shadow, 0-16
   hoverable: true # card hoverable, false / true
   card_media_covered: normal # card media covered, normal / gradient / transparent 
+  drawer_close: true # false / true
 
 head:
   theme_color: "#3F51B5"
@@ -53,6 +54,8 @@ drawer:
 footer:
   since: 
   hosted_on: 
+  powered_by_hexo: true
+  theme_m: true
   custom: |
 
 open_graph:
@@ -65,6 +68,7 @@ open_graph:
 posts:
   thumbnail_title: false # true /false
   index_content: auto # false / auto / excerpt / content
+  show_categories: false
   license: '<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
 
 comments:

@@ -1,7 +1,7 @@
 ---
 title: "Introducting Theme-M"
 date: 2020-07-26 15:00:00
-updated: 2020-08-12 03:19:00
+updated: 2020-08-14 05:42:00
 comment: true
 thumbnail: https://i.loli.net/2020/08/03/wQGcCKZiB8Y6gXf.png
 categories:
@@ -37,7 +37,7 @@ MDUI 自带（我提了个 issue），在主题里卡片和卡片以外是分开
 
 #### 评论
 
-只做了 Utterances。
+只做了 Utterances。以后加上 Disqus，其他的目前不考虑。
 
 #### PJAX
 
@@ -50,20 +50,20 @@ MDUI 自带（我提了个 issue），在主题里卡片和卡片以外是分开
 
 #### TOC
 
-一样没有在初版实现，TOC是我最头疼的功能因为写起来很麻烦。
+放弃了
 
 #### 语法高亮
 
-更新：Hexo 原生支持 Prism.js 了。
+更新：Hexo 5.0 原生支持 Prism.js。
 所以你只需要在博客的 _config.yml 启用 prism，再在载入主题的 _config.yml 自定义 css 即可。
 
 #### 搜索
 
-自动生成高端大气的 Google 搜索。
+自动生成高端大气的 Google 搜索。本地搜索待重写
 
 ### 文档
 
-不打算写文档。
+不打算写文档。暂时
 
 ### 版本号
 
@@ -72,10 +72,9 @@ Theme-M 不设版本号，如果你是来自未来的其他使用者，你可以
 
 ### 许可证
 
-我讨厌GPL的传染性，所以不会用它。
+我讨厌 GPL 的传染性，所以不会用它。
 MIT？Apache2.0？这些都很好，但我还是想用——
 [WTFPL(Do What The Fuck You Want To Public License)](http://wtfpl.net).
-
 You just DO WHAT THE FUCK YOU WANT TO!
 
 ### 样式测试
@@ -417,4 +416,4 @@ Maecenas ornare arcu at mi suscipit, non molestie tortor ultrices. Aenean conval
 
 Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr>. Use <kbd>Crtl</kbd> + <kbd>C</kbd> to stop.
 
-{% youtube TIbZDRXM-Tg %}
+{% youtube okJ9Vk6owG8 %}

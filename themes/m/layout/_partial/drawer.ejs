@@ -1,4 +1,4 @@
-<aside class="mdui-drawer mdui-drawer-close">
+<aside class="mdui-drawer<% if(theme.mdui.drawer_close == true) { %> mdui-drawer-close<% } %>">
     <nav class="mdui-list" mdui-collapse="{accordion: true}">
         <a <% if(theme.url.avatar) { %>href="<%= theme.url.avatar %>" <% } %> class="mdui-list-item mdui-ripple">
             <div class="mdui-list-item-avatar">
@@ -68,20 +68,27 @@
             <i class="mdui-list-item-icon mdui-icon material-icons">rss_feed</i>
             <div class="mdui-list-item-content">RSS</div>
         </a>
-        <% } %>
+        <% } if(theme.drawer.custom) { for(var i in theme.drawer.custom) { %>
+            <a href="<%= theme.drawer.custom[i].url %>" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon <%= theme.drawer.custom[i].class %>"><%= theme.drawer.custom[i].content %></i>
+                <div class="mdui-list-item-content"><%= i %></div>
+            </a>
+        <% }} %>
     </nav>
     <div class="mdui-divider"></div>
     <footer class="mdui-m-l-2 mdui-m-t-1 mdui-typo mdui-text-color-theme-disabled">
         <p class="mdui-m-b-0">
-            <% if(theme.footer.custom) { %><%- theme.footer.custom %><% } %>
+            <% if(theme.footer.custom) { %><%- theme.footer.custom %><br><% } %>
             ©<% if(theme.footer.since) { %> <%= theme.footer.since %> - <% } %>
             <%- full_date(new Date(), 'YYYY') %> <%= config.author %><br>
             <% if(theme.footer.hosted_on) { %>
             Hosted on <a href="<%= theme.url.hosted_on %>" rel="noreferrer"
                 target="_blank"><%= theme.footer.hosted_on %></a><br>
-            <% } %>
+            <% } if(theme.footer.powered_by_hexo == true) { %>
             Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a><br>
+            <% } if(theme.footer.theme_m == true) { %>
             Theme - <a href="https://github.com/kwaa/m" rel="noreferrer" target="_blank"
                 mdui-tooltip="{position:'right', content: 'AB7575DD-9E94-B917-85CD-000D7FEBEAAE'}">M</a></p>
+            <% } %>
     </footer>
 </aside>

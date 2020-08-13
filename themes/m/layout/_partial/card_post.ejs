@@ -21,9 +21,16 @@
         <%- post.content %>
         <% if(theme.posts.license !== false) { %>
         <%- partial ('_widget/post_license', {post: post}) %>
-        <% } %>
-        <% if(post.tags && post.tags.length) { %>
+        <% } if(post.tags && post.tags.length) { %>
         <div class="mdui-m-t-2">
+            <% if(post.categories && post.categories.length && theme.posts.show_categories == true) { %>
+            <%- list_tags(post.categories, {
+                show_count: false,
+                class: 'mdui-btn mdui-btn-dense mdui-color-theme mdui-ripple mdui-m-r-1 m',
+                style: 'none',
+                separator: ''
+            }) %>
+            <% } %>
             <%- list_tags(post.tags, {
                 show_count: false,
                 class: 'mdui-btn mdui-btn-dense mdui-ripple mdui-m-r-1 m',

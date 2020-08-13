@@ -19,6 +19,7 @@ mdui:
   shadow: "0" # card shadow, 0-16
   hoverable: true # card hoverable, false / true
   card_media_covered: gradient # card media covered, normal / gradient / transparent 
+  drawer_close: true # false / true
 
 head:
   theme_color: "#2196F3"
@@ -60,12 +61,19 @@ drawer:
   tags: true
   links: true
   rss: false
+  custom:
+    "Google":
+      class: "material-icons"
+      content: "search"
+      url: "https://google.com"
 
 footer:
   since: "2019"
   hosted_on: "Github"
+  powered_by_hexo: true
+  theme_m: true
   custom: |
-    <a href="https://kwaa.dev/atom.xml">RSS</a> | BG: <a href="https://www.pixiv.net/artworks/61082386">星の唄</a><br>
+    <a href="https://kwaa.dev/atom.xml">RSS</a> | BG: <a href="https://www.pixiv.net/artworks/61082386">星の唄</a>
 
 open_graph:
   google_analytics:
@@ -77,6 +85,7 @@ open_graph:
 posts:
   thumbnail_title: false # true /false
   index_content: auto # false / auto / excerpt / content
+  show_categories: false
   license: '<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
 
 comments:
