@@ -1,4 +1,5 @@
 importScripts('https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.3/workbox/workbox-sw.min.js');
+workbox.setConfig({modulePathPrefix: 'https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.3/workbox/'});
 workbox.routing.registerRoute(
     ({url}) => url.origin === 'https://kwaa.dev',
     new workbox.strategies.NetworkFirst({
@@ -16,7 +17,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst({
         cacheName: 'image',
         plugins: [
-            new ExpirationPlugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxEntries: 30,
                 maxAgeSeconds: 7 * 24 * 60 * 60,
             })
