@@ -31,6 +31,7 @@ head:
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Bold.woff2" as="font" crossorigin'
+    - 'href="https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/icon_192.png" as="image" crossorigin'
   preconnect:
     - 'href="//cdn.jsdelivr.net"'
     - 'href="//i.loli.net"'
