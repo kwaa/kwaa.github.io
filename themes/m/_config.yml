@@ -93,7 +93,7 @@ comments:
   utterances:
     repo: kwaa/comments
     issue_term: pathname
-    theme: github-auto # github-auto or official theme
+    theme: perferred-color-scheme
     src: "https://utteranc.es/client.js"
 
 search:
