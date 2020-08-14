@@ -6,6 +6,7 @@
         utterances.setAttribute('issue-term', '<%= theme.comments.utterances.issue_term %>')
         utterances.setAttribute('theme', '<%= theme.comments.utterances.theme %>')
         utterances.setAttribute('repo', '<%= theme.comments.utterances.repo %>')
+        utterances.crossOrigin = "anonymous";
         utterances.src = '<%= theme.comments.utterances.src %>';
         document.getElementById('comment-container').appendChild(utterances);
     })();
