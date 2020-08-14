@@ -6,6 +6,12 @@
 <% })} %>
 <script>
     var $ = mdui.$;
+    <% if(theme.plugins.pwa == true) { %>
+    if ('serviceWorker' in navigator) {
+    window.onload = function () {
+        navigator.serviceWorker.register("<%= url_for('/sw.js') %>");
+    };}
+    <% } %>
     function fadeIn() {
         $(".mdui-container-fluid").css('opacity', '1');
         <% if(theme.plugins.pangu == true) { %>

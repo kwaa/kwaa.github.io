@@ -64,6 +64,20 @@ PUBKEY：**[COMING SOON]**
 - '标题：./kwaa.dev'
 - 'URL：https://kwaa.dev'
 - '描述： AB7575DD-9E94-B917-85CD-000D7FEBEAAE'
-- '网站图标：暂无'
-- '个人头像：暂无'
+- '网站图标：如下'
 ```
+
+目前提供 icon 和 maskable_icon 两种图标，请自行选用。这里只放出常用大小，其他的可以修改 url 获取
+分辨率：48px 96px 144px 192px 256px 512px 1024px
+
+icon_base64: [24px](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAUVBMVEUICz3W29T///+5wccaSXtErbk4ODjz8OZVVVX/7MkVFRXtrpqTJiVHKxPZOjr/+/T/07d1TCNgERn59vb//OPSzMzuuwKZne20srL0mIyWGwVwQ6mkAAAA9UlEQVQoz1WOCbLDIAxDMQYngMna9i/3P2hlGjpEMB7QQzbukoeIrLqbPDHDRCV/91d2TPCDAxn8iWOkCSIGGcF/oBWEkBqB9Z5onazcAfrjPa+WAhlGEMPBTtxBCMEAAzG7lBwBwLzAZL3cT0gp4MEAiG2d8fGITDdA1ixBWweXT8eyKG/bptSB31tARBdbxwDshzLPs/6pHgOoTAYkI/D85Q6ir5UZgSwA51MYIMboopEGsqrKmRl+B7uI5Jr1pTNO8L8AAQBU2/6bKMUCGP/CD0RKaTPgJ6js+aPNLggZKCWVKjKbBOcC0Fr5WmqFfxHfhrwBRawLyITR1qYAAAAASUVORK5CYII=)
+
+>推荐使用 icon_base64，但需要配合 image-rendering:pixelated 样式
+
+icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_192.png) [512px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_512.png)
+
+> 标准规格
+
+maskable_icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_192.png) [512px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_512.png)
+
+> pwa 使用的 maskable_icon 应用图标
