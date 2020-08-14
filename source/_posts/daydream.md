@@ -17,7 +17,7 @@ tags:
 
 当之无愧的耳机顶峰。比起某些卖 111 万甚至 49.8 万的静电耳机（说的就是你，HE1），STAX 不可谓不是静电耳机界的良心。
 
-耳放方面则是 [JoaMat](https://www.head-case.org/forums/profile/3199-joamat/) 的 [MINI T2](https://www.head-case.org/forums/topic/13520-diy-mini-t2-build-thread/)，SRM-T2 耳放应该不用我多说了。
+耳放方面则是 [MINI T2](https://www.head-case.org/forums/topic/13520-diy-mini-t2-build-thread/)，SRM-T2 耳放应该不用我多说了。
 
 ## Linkwitz LX521.4
 

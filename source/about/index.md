@@ -3,8 +3,7 @@ title: ABOUT / 关于
 date: 2019-10-17 00:00:00
 updated: 2019-12-18 15:40:00
 comment: true
-wordcount: false
-copyright: false
+license: false
 ---
 
 
