@@ -1,0 +1,34 @@
+{
+    "name": "./kwaa.dev",
+    "short_name": "kwaa.dev",
+    "start_url": "/?utm_source=pwa",
+    "display": "standalone",
+    "description": "AI HOSHIKAWA'S BLOG",
+    "orientation": "portrait",
+    "background_color": "#2196f3",
+    "theme_color": "#2196f3",
+    "icons": [
+      {
+        "src": "/img/maskable_icon_192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/img/maskable_icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Search",
+        "url": "/search/"
+      },
+      {
+        "name": "About",
+        "url": "/about/"
+      }
+    ]
+  }
