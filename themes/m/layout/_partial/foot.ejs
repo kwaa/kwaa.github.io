@@ -29,7 +29,8 @@
             "title",
             <% if(config.description) { %>"meta[name=description]",<% } %>
             "#main"
-        ]
+        ],
+        cacheBust: false,
     })
     function fadeOut() {
         $(".mdui-container-fluid").css('opacity', '0');
