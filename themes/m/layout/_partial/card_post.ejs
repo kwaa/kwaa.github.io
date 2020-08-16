@@ -1,5 +1,5 @@
 <div class="mdui-theme-layout-<%= theme.mdui.layout %> mdui-color-transparent">
-<article <%- fragment_cache ('card_style', function (){
+<<% if(is_post() || is_page()) { %>article<% } else { %>section<% } %> <%- fragment_cache ('card_style', function (){
     return partial ('_partial/card_style');
 }) %>>
     <% if(post.thumbnail) { %>
@@ -44,5 +44,5 @@
         <% } %>
     </div>
     <% } %>
-</article>
+</<% if(is_post() || is_page()) { %>article<% } else { %>section<% } %>>
 </div>
