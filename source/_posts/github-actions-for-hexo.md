@@ -44,7 +44,7 @@ addEventListener('fetch', event => {
 
 我经常用 Telegram，当然也想让自己的博客能兼容 Instant View。
 不过实际上应该说是 Instant View 兼容我的博客？
-总之 Theme M 需要写的部分不是很多，下面是模板文件。
+总之 Theme M 需要写的部分不是很多，下面是本站的模板文件。
 
 ``` plain
 ~version: "2.1"
@@ -55,6 +55,8 @@ channel: "@kwaachannel"
 @remove: $body//a[has-class("mdui-card-primary-title")]
 @remove: $body//div[has-class("mdui-card-primary-subtitle")]
 ```
+
+在 [My Templates - Instant View](https://instantview.telegram.org/my) 创建新模板，标记十个或更多 URL 后即可提交。
 
 ## Gulp & Github Actions 自动部署
 
