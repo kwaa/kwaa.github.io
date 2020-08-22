@@ -1,7 +1,7 @@
 ---
 title: "Project AXE - 旗舰耳机 DIY 计划"
 date: 2020-04-07 20:20:00
-updated: 2020-06-09 23:30:00
+updated: 2020-08-20 05:37:00
 comment: true
 categories:
 - 音频
@@ -25,7 +25,7 @@ tags:
 
 Project AXE 最初方案基本照搬 [dhruvmeena96 的设计](https://www.head-fi.org/threads/home-made-iems.430688/post-15070746)，做了一些小修改和额外加了一个 30017 用来实现类似 CK100 的音染。
 
-> IEM-AXE (2019年原设计) 10单元 5分频 3导管
+> IEM-AXE (ver2019.8) 10单元 5分频 3导管
 
 - 38D1XJ007Mi(串联) - L-pad(4.7Ω, 4.7Ω) - 并管黄阻尼(4700)
 - 33AJ007i(串联) - 串47Ω - 并15uF - 并管黄阻尼(4700)
@@ -39,54 +39,27 @@ Project AXE 最初方案基本照搬 [dhruvmeena96 的设计](https://www.head-f
 
 在这期间某宝也能买到 EST65QB02 了，2020 年的 AXE 设计去掉了 30017 并把静电单元改为 EST65QB02，但我并没有钱买新的静电单元(一个七百多呢) 原型只好继续用 EST65DA01，也就是八单元。
 
-> IEM-AXE (2020年初设计) 10单元 4分频 2导管
-
-- 38D1XJ007Mi(串联) - 串20Ω - 并管黄阻尼(4700)
-- 33AJ007i(串联) - 并管黄阻尼(4700)
-- 2389D(半线圈并联) - 串2.2uF - 并管棕阻尼(1000)
-- EST65QB02(并联) - 串470nF - 并管棕阻尼(1000)
-
 ## 新生 2020.05 ~
 
-果然还是放弃不了 L-pad！自己再做一次试试看吧！
+到这里旧 AXE 和新 AXE 已经不是一个东西了。
+我目前更倾向于先把旧 AXE 做完自用，满足我对旗舰入耳式耳机的需求；新 AXE 考虑到预算不足暂且搁置。
 
-我首先重新设计了分频，之后需要制作分频板，修复单元和装壳。
+> IEM-AXE (ver2020.8) 10单元 4分频 3导管
 
-> IEM-AXE (2020年中设计) 10单元 4分频 3导管
+- 38D1XJ007Mi(串联) - L-pad(串4.7Ω, 并4.7Ω) - 并管黄阻尼(4700)
+- 33AJ007i(串联) - 串47Ω, 并15uF - 并管黄阻尼(4700)
+- 2389D(半线圈并联) - 串2.2uF, 并1uF - 棕阻尼(1000)
+- EST65QB02(并联) - 串470nF - 白阻尼(680)
 
-- 38D1XJ007Mi(串联) - L-pad(4.7Ω, 4.7Ω) - 并管黄阻尼(4700)
-- 33AJ007i(串联) - 串47Ω - 并15uF - 并管黄阻尼(4700)
-- 2389D(半线圈并联) - (?) - ?阻尼(?)
-- EST65QB02(并联) - (?) - 灰阻尼(320)
+作为旗舰规格自然要带一个开关，用来调整 L-pad 阻值：
 
-高频分频我打算重新配置，所以以问号标记；中低频部分沿用 2019 年的设计。
-
-EST65QB02 只需要串联电容即可，2389D我打算压一下极高频部分以免喧宾夺主。这整个设计最贵的部分就是静电单元，我可不想加和不加没什么区别；所以可能需要串联部分。
-
-AXE 的分频版算是我第一个原创 PCB 设计，线路也比较简单。原理图：
-
-还没画完
-
-电容/电阻焊盘使用了 0805 规格，一共七个。目前我还没有完成 PCB 设计，先做一些耳机练手再继续吧。
-
-UPDATE: 无论如何，我打算先把原本的八单元方案做出来自用。
-
-## 膨胀
-
-旗舰 IEM 怎么能没有调音开关？这也是我之后要做的事。
-
-想了想 AXE 这规格也只适合做低频调节，所以我将不同的版本命名为：
-
-- BASS-LIGHT (IEM-AXE-BL, 参考 [Harman IE Target 2019 without bass](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2_wo_bass.png))
-- BASS-HEAVY (IEM-AXE-BH, 参考 [Harman IE Target 2019](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2.png))
-- BASS-SWITCH (IEM-AXE-BS, 可切换)。
+- BASS-LIGHT (IEM-AXE_BL, 参考 [Harman IE Target 2019 without bass](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2_wo_bass.png))
+- BASS-HEAVY (IEM-AXE_BH, 参考 [Harman IE Target 2019](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2.png))
 
 ## 外观
 
-面板打算使用某宝买的银箔碎碳板，原本貌似是刀柄料。
-太好看了！
-
-![CARBON](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-axe/carbon.jpg)
+面板打算使用某宝买的银箔碎碳板，配正反 STREIN 金属贴；
+腔体透黑+金属出音嘴，这个还是等样品做完之后放成品图吧。
 
 ## 总结
 
@@ -105,4 +78,4 @@ UPDATE: 无论如何，我打算先把原本的八单元方案做出来自用。
 
 工具两千左右，单元和其他材料大概有三千。
 
-惨痛的教训：没钱就不要烧耳机了！但我买都买了，也只好含着泪做完。
+惨痛的教训：没钱就不要尝试做多动铁耳机！但我买都买了，也只好忍痛做完。
