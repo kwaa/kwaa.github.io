@@ -73,7 +73,7 @@ footer:
   powered_by_hexo: true
   theme_m: true
   custom: |
-    <a href="https://kwaa.dev/atom.xml">RSS</a> | BG: <a href="https://www.pixiv.net/artworks/61082386">星の唄</a>
+    <a href="https://kwaa.dev/atom.xml">RSS</a> | <a href="https://kwaa.dev/sitemap.xml">Sitemap</a><br>BG: <a href="https://www.pixiv.net/artworks/61082386">星の唄</a>
 
 open_graph:
   google_analytics:
