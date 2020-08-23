@@ -83,18 +83,20 @@ open_graph:
   fb_app_id:
 
 posts:
-  thumbnail_title: false # true /false
+  thumbnail_title: false # true / false
   index_content: auto # false / auto / excerpt / content
   show_categories: false
   license: '<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>'
 
 comments:
-  use: utterances # utterances
+  use: utterances # utterances / disqus
   utterances:
     repo: kwaa/comments
     issue_term: pathname
     theme: "preferred-color-scheme"
     src: "https://utteranc.es/client.js"
+  disqus:
+    src: "https://kwaa.disqus.com/embed.js"
 
 search:
   use: google # google
