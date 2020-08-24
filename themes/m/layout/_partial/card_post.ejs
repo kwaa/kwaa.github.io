@@ -40,8 +40,9 @@
         </div>
         <% }} else { %>
             <%- post.excerpt %>
+            <% if(theme.posts.view_more !== false && post.view_more !== false) { %>
             <a class="mdui-btn mdui-btn-block mdui-ripple" href="<%- url_for(post.path) %>"><%= __("index.more") %></a>
-        <% } %>
+        <% }} %>
     </div>
     <% } %>
 </<% if(is_post() || is_page()) { %>article<% } else { %>section<% } %>>

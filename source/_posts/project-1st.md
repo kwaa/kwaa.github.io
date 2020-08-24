@@ -56,7 +56,7 @@ Project 1ST 是由一对六单元耳机头，两条 2.5mm TRRS 对录线和一�
 
 仿照 Orion ASP 画的 Function Block Diagram，随进度更新：
 
-![diagram](https://blog.917.moe/p/project-1st/diagram.png)
+![diagram](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/project-1st/diagram.png)
 
 #### IB - 输入缓冲
 
