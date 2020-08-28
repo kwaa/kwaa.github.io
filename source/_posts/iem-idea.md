@@ -21,9 +21,9 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/iem-ide
 
 > 史诗巨坑，绝赞制作中 2019.07
 
-我 DIY 耳机的第一步。[Project AXE - 旗舰耳机 DIY 计划](https://kwaa.dev/p/project-axe/)
+DIY 耳机的第一步。[Project AXE - 旗舰耳机 DIY 计划](https://kwaa.dev/p/project-axe/)
 
-## Project 1ST | IEM-IVX「MASTER」未实践
+## Project 1ST | IEM-IVX「MASTER」构思中
 
 > 终极天坑，停留在想法 2020.01
 
@@ -44,19 +44,19 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/iem-ide
 - 22955 + 22955(串联, 半线圈) - 串20Ω, 并10uF - 并管绿阻 - 15mm导管/2mmID
 - 29689 + 29689(串联, 半线圈) - 串10uF - 并管白阻 - 10mm导管/2mmID
 
-## IEM-UN1「UNIVERSAL」已完成
+## IEM-UN1「UNIVERSAL」已完成/已废弃
 
-> 由于缺乏乐趣~~市面上太多同类~~，此方案已不再更新。
+> 由于缺乏乐趣~~市面上太多同类~~，此方案不再更新。
 
 2354 便宜了不少，很适合设计新的单动铁。作为我眼里最合适的全频单元，~~或许以后设计 Project 2ND（如果有）的时候也会用到它。~~ 没有 Project 2ND 了
 
 无趣的同时它好做并且声音不差。
 
-> IEM-UN1（完成设计）1单元 1分频 1导管
+> IEM-UN1（最终设计）1单元 1分频 1导管
 
 - 2354 - 串39Ω - 棕阻 - 12mm导管/2mmID
 
-## IEM-BLOOM「BLOOM」未实践
+## IEM-BLOOM「BLOOM」构思中
 
 > 现代日呆耳机
 
@@ -88,7 +88,7 @@ BLOOM 的设计需求是 Galgame / Anisong 专精，所以你可以在它身上�
 - TWFK-23991*2(并联, 和30017并联) - FK串22uF - WBFK串470nF - 灰阻 - 15mm导管/2mmID
 - TWFK-30017*2(并联, 和23991并联) - FK串22uF - WBFK串470nF - 白阻 - 10mm导管/2mmID
 
-## IEM-MIDORI「翠」
+## IEM-MIDORI「翠」构思中
 
 > 恶意的政治隐喻
 

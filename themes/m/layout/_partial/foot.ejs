@@ -1,7 +1,5 @@
 <%- js(theme.vendors.mdui_js) %>
-<% if(theme.plugins.pangu == true) { %>
-    <%- js(theme.vendors.pangu_js) %>
-<% } if(theme.plugins.script) { theme.plugins.script.forEach(function(link) { %>
+<% if(theme.plugins.script) { theme.plugins.script.forEach(function(link) { %>
     <script src="<%= link %>"></script>
 <% })} %>
 <script>
@@ -12,30 +10,23 @@
         navigator.serviceWorker.register("<%= url_for('/sw.js') %>");
     };}
     <% } %>
-    function fadeIn() {
-        $(".mdui-container-fluid").css('opacity', '1');
-        <% if(theme.plugins.pangu == true) { %>
-            pangu.autoSpacingPage();
-        <% } if(theme.m.init) { %>
-            <%- theme.m.init %>
-        <% } %>
-    };fadeIn()
 </script>
 <% if(theme.plugins.pjax == true) { %>
 <%- js(theme.vendors.pjax_js) %>
 <script>
     var pjax = new Pjax({
-        selectors: [
-            "title",
-            <% if(config.description) { %>"meta[name=description]",<% } %>
-            "#main"
-        ],
+        selectors: ["title",<% if(config.description) { %>"meta[name=description]",<% } %>"main"],
+        switches: {
+            "main": function(oldEl, newEl, options) {
+                $('.mdui-container-fluid').css('opacity', '0');
+                setTimeout(function(){
+                    oldEl.outerHTML = newEl.outerHTML;
+                    $('.mdui-container-fluid').css('opacity', '1');
+                },400);
+                this.onSwitch();
+            }
+        },
         cacheBust: false,
-    })
-    function fadeOut() {
-        $(".mdui-container-fluid").css('opacity', '0');
-    }
-    document.addEventListener('pjax:send', fadeOut)
-    document.addEventListener("pjax:complete", fadeIn)
+    });
 </script>
 <% } %>
