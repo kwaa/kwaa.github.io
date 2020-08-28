@@ -19,8 +19,8 @@
         switches: {
             "main": function(oldEl, newEl, options) {
                 $('.mdui-container-fluid').css('opacity', '0');
-                oldEl.innerHTML = newEl.innerHTML;
                 setTimeout(() => {
+                    oldEl.innerHTML = newEl.innerHTML;
                     $('.mdui-container-fluid').css('opacity', '1');
                     this.onSwitch();
                 },400);
