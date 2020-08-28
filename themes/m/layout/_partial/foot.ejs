@@ -17,7 +17,7 @@
     var pjax = new Pjax({
         selectors: ["title",<% if(config.description) { %>"meta[name=description]",<% } %>"main"],
         switches: {
-            "main": function(oldEl, newEl, options) {
+            "main": function(oldEl, newEl) {
                 $('.mdui-container-fluid').css('opacity', '0');
                 setTimeout(() => {
                     oldEl.innerHTML = newEl.innerHTML;
