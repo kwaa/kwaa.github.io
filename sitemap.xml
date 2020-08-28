@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kwaa.dev/links/index.html</loc>
+    
+    <lastmod>2020-08-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kwaa.dev/search/index.html</loc>
     
     <lastmod>2020-08-28</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://kwaa.dev/tags/index.html</loc>
-    
-    <lastmod>2020-08-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kwaa.dev/links/index.html</loc>
     
     <lastmod>2020-08-28</lastmod>
     
