@@ -15,18 +15,19 @@
 <%- js(theme.vendors.pjax_js) %>
 <script>
     var pjax = new Pjax({
+        elements: "a",
         selectors: ["title",<% if(config.description) { %>"meta[name=description]",<% } %>"main"],
         switches: {
-            "main": function(oldEl, newEl, options) {
+            "main": function(oldEl, newEl) {
                 $('.mdui-container-fluid').css('opacity', '0');
                 setTimeout(function(){
-                    oldEl.outerHTML = newEl.outerHTML;
+                    oldEl.innerHTML = newEl.innerHTML;
                     $('.mdui-container-fluid').css('opacity', '1');
                 },400);
                 this.onSwitch();
             }
         },
-        cacheBust: false,
+        // cacheBust: false,
     });
 </script>
 <% } %>
