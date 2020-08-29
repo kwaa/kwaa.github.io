@@ -10,17 +10,17 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/about/universe
 
 ## kwa@kwaa.dev ~ % cat site
 
-``` yaml
-OS: Arch Linux x86_64
-Host: Github Pages
-Generator: Hexo
-Theme: M
-Style: MDUI
-Since: 2019-10-17
-Url: https://kwaa.dev
-Title: "./kwaa.dev"
-Descr: "AI HOSHIKAWA's BLOG."
-Uuid: "AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
+``` plain
+  _|_|      _|_|    OS: Arch Linux x86_64
+_|    _|  _|    _|  Host: Github Pages
+  _|_|      _|_|_|  Generator: Hexo
+_|    _|        _|  Theme: M
+  _|_|    _|_|_|    Style: MDUI
+_|_|_|    _|  _|    Since: 2019-10-17
+_|        _|  _|    Url: https://kwaa.dev
+_|_|_|    _|_|_|_|  Title: "./kwaa.dev"
+_|    _|      _|    Descr: "AI HOSHIKAWA's BLOG."
+  _|_|        _|    Uuid: "AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
 ```
 
 ## kwa@kwaa.dev ~ % cat me
@@ -83,3 +83,14 @@ icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_19
 maskable_icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_192.png) [512px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_512.png)
 
 > pwa 使用的 maskable_icon 应用图标
+
+## kwa@kwaa.dev ~ % cat timeline
+
+``` yaml
+timeline:
+    2015-09: first blog, using WordPress. (destroyed)
+    2017-08: second blog, using ZeroNet. (unknown)
+    2018-07: third blog, using Typecho. (destroyed)
+    2019-10: fourth blog, using Hexo. (blog.917.moe)
+    2020-08: fourth blog rebuild. (kwaa.dev)
+```
