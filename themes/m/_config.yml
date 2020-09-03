@@ -62,10 +62,10 @@ drawer:
   links: true
   rss: false
   custom:
-    "别点":
+    "日本語":
       class: "material-icons"
-      content: "do_not_disturb"
-      url: "https://youtu.be/CKHV15m0EMQ"
+      content: "translate"
+      onclick: "location='https://kwaa.dev/ja'"
 
 footer:
   since: "2019"
@@ -117,3 +117,5 @@ vendors:
   prism_js: "https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js" # 1.2.0
   prism_theme: "https://cdn.jsdelivr.net/gh/PrismJS/prism-themes/themes/prism-material-dark.min.css"
   busuanzi_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" # 2.3
+  serviceworker:
+  webmanifest:

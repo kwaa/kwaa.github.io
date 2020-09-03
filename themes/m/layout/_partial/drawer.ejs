@@ -69,7 +69,7 @@
             <div class="mdui-list-item-content">RSS</div>
         </a>
         <% } if(theme.drawer.custom) { for(var i in theme.drawer.custom) { %>
-            <a href="<%= theme.drawer.custom[i].url %>" class="mdui-list-item mdui-ripple">
+            <a <% if(theme.drawer.custom[i].href) { %>href="<%= theme.drawer.custom[i].href %>"<% } if(theme.drawer.custom[i].onclick) { %>onclick="<%- theme.drawer.custom[i].onclick%>"<% } %> class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon <%= theme.drawer.custom[i].class %>"><%= theme.drawer.custom[i].content %></i>
                 <div class="mdui-list-item-content"><%= i %></div>
             </a>

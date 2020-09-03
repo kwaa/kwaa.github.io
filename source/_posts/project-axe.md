@@ -1,7 +1,7 @@
 ---
 title: "Project AXE - 旗舰耳机 DIY 计划"
 date: 2020-04-07 20:20:00
-updated: 2020-08-20 05:37:00
+updated: 2020-09-03 23:54:00
 comment: true
 categories:
 - 音频
@@ -43,23 +43,26 @@ Project AXE 最初方案基本照搬 [dhruvmeena96 的设计](https://www.head-f
 
 到这里旧 AXE 和新 AXE 已经不是一个东西了。
 我目前更倾向于先把旧 AXE 做完自用，满足我对旗舰入耳式耳机的需求；新 AXE 考虑到预算不足暂且搁置。
+[一年后的成果：STREIN IEM-AXE_P8](https://kwaa.dev/p/project-axe-p8)
 
-> IEM-AXE (ver2020.8) 10单元 4分频 3导管
+IEM-AXE ver2020.9 将中低频改回了并联，并用 RC 低通替代了 L-pad。
 
-- 38D1XJ007Mi(串联) - L-pad(串4.7Ω, 并4.7Ω) - 并管黄阻尼(4700)
-- 33AJ007i(串联) - 串47Ω, 并15uF - 并管黄阻尼(4700)
-- 2389D(半线圈并联) - 串2.2uF, 并1uF - 棕阻尼(1000)
+> IEM-AXE (ver2020.9) 10单元 4分频 3导管
+
+- 38D1XJ007Mi(并联) - RC低通(串100Ω, 并100uF) - 并管黄阻尼(4700)
+- 33AJ007i(并联) - 并管黄阻尼(4700)
+- 2389D(半线圈并联) - 串2.2uF - 绿阻尼(1500)
 - EST65QB02(并联) - 串470nF - 白阻尼(680)
 
-作为旗舰规格自然要带一个开关，用来调整 L-pad 阻值：
+作为旗舰规格自然要带一个开关，用来调整低频：
 
 - BASS-LIGHT (IEM-AXE_BL, 参考 [Harman IE Target 2019 without bass](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2_wo_bass.png))
 - BASS-HEAVY (IEM-AXE_BH, 参考 [Harman IE Target 2019](https://github.com/jaakkopasanen/AutoEq/blob/master/compensation/harman_in-ear_2019v2.png))
 
 ## 外观
 
-面板打算使用某宝买的银箔碎碳板，配正反 STREIN 金属贴；
-腔体透黑+金属出音嘴，这个还是等样品做完之后放成品图吧。
+~~面板打算使用某宝买的银箔碎碳板，配正反 STREIN 金属贴；
+腔体透黑+金属出音嘴，这个还是等样品做完之后放成品图吧。~~ 参见 IEM-AXE_P8
 
 ## 总结
 

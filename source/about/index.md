@@ -55,11 +55,11 @@ PUBKEY：**[COMING SOON]**
 - "确保域名变更后及时通知" # 留个死链我会很难过
 - "在之前与我至少有一次交流" # 先友后链
 
-满足以上条件可以直接于tg@kwaabot或本页申请，我一般都会通过。格式:
+满足以上条件可以直接于 tg@kwaabot 或本页申请，我一般都会通过。格式:
 - "标题：你的网站标题"
 - "URL：你的网站 URL"
-- "描述：你的网站描述或副标题，可选。"
-- "网站图标/个人头像：图片，由于我的主题样式我推荐提交个人头像。"
+- "描述：你的网站描述或副标题，可选"
+- "网站图标/个人头像：图片，由于我的主题样式我推荐提交个人头像"
 
 你可以先行或在我确认通过后添加本站友链。以下是一些相关信息:
 - "标题：./kwaa.dev"
@@ -67,6 +67,12 @@ PUBKEY：**[COMING SOON]**
 - "描述1：AI HOSHIKAWA's BLOG."
 - "描述2：AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
 - "网站图标：如下"
+
+如果你希望使用我的信息而不是本站信息:
+- "标题: 藍"
+- "URL: https://kwaa.dev"
+- "描述: 自己想一个，想不到就用上面那串 UUID 吧"
+- "个人头像：如下"
 ```
 
 目前提供 icon 和 maskable_icon 两种图标，请自行选用。这里只放出常用大小，其他的可以修改 url 获取
@@ -88,9 +94,9 @@ maskable_icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/im
 
 ``` yaml
 timeline:
-    2015-09: first blog, using WordPress. (destroyed)
-    2017-08: second blog, using ZeroNet. (unknown)
-    2018-07: third blog, using Typecho. (destroyed)
-    2019-10: fourth blog, using Hexo. (blog.917.moe)
-    2020-08: fourth blog rebuild. (kwaa.dev)
+    2015-09: first blog, using WordPress. | destroyed
+    2017-08: second blog, using ZeroNet. | unknown
+    2018-07: third blog, using Typecho. | destroyed
+    2019-10: fourth blog, using Hexo. | blog.917.moe
+    2020-08: fourth blog rebuild. | kwaa.dev
 ```
