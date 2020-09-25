@@ -14,7 +14,7 @@
     window.onload = function () {
         <% if(theme.plugins.pwa == true) { %>
         if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("<%= url_for('/sw.js') %>");
+        navigator.serviceWorker.register("<% if(theme.vendors.serviceworker) { %><%- theme.vendors.serviceworker %><% } else { %><%= url_for('/sw.js') %><% } %>");
         }<% } %>init()}
 </script>
 <% if(theme.plugins.pjax == true) { %>

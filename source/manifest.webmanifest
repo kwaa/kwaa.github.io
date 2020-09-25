@@ -20,15 +20,5 @@
         "type": "image/png",
         "purpose": "any maskable"
       }
-    ],
-    "shortcuts": [
-      {
-        "name": "Search",
-        "url": "/search/"
-      },
-      {
-        "name": "About",
-        "url": "/about/"
-      }
     ]
   }

@@ -24,8 +24,10 @@
 <link rel="apple-touch-icon" href="<%= url_for(theme.head.apple_touch_icon) %>">
 <% } if(theme.head.theme_color) { %>
 <meta name="theme-color" content="<%= theme.head.theme_color %>">
-<% } if(theme.plugins.pwa == true) { %>
-<link rel="manifest" href="<%= url_for('/manifest.webmanifest') %>">
+<% } if(theme.plugins.pwa == true) { if(theme.vendors.webmanifest) { %>
+    <link rel="manifest" href="<%- theme.vendors.webmanifest %>">
+    <% } else { %>
+    <link rel="manifest" href="<%= url_for('/manifest.webmanifest') %>">
 <% } if (theme.url.rss){ %>
     <% if(config.feed.type == "atom"){ %>
         <link rel=alternate type="application/atom+xml" href="<%= theme.url.rss || '#' %>">
