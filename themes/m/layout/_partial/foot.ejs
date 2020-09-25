@@ -1,15 +1,21 @@
 <%- js(theme.vendors.mdui_js) %>
-<% if(theme.plugins.script) { theme.plugins.script.forEach(function(link) { %>
+<% if(theme.plugins.pangu) { %>
+    <script src="<%= theme.vendors.pangu_js %>"></script>
+<% } if(theme.plugins.script) { theme.plugins.script.forEach(function(link) { %>
     <script src="<%= link %>"></script>
 <% })} %>
 <script>
     var $ = mdui.$;
-    <% if(theme.plugins.pwa == true) { %>
-    if ('serviceWorker' in navigator) {
+    function init(){
+        <% if(theme.plugins.pangu == true) { %>
+        pangu.autoSpacingPage();
+        <% } %>
+    }
     window.onload = function () {
+        <% if(theme.plugins.pwa == true) { %>
+        if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register("<%= url_for('/sw.js') %>");
-    };}
-    <% } %>
+        }<% } %>init()}
 </script>
 <% if(theme.plugins.pjax == true) { %>
 <%- js(theme.vendors.pjax_js) %>
@@ -23,6 +29,7 @@
                     oldEl.innerHTML = newEl.innerHTML;
                     $('.mdui-container-fluid').css('opacity', '1');
                     this.onSwitch();
+                    init();
                 },400);
             },
         },

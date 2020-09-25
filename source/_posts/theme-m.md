@@ -3,7 +3,7 @@ title: "Introducting Theme-M"
 date: 2020-07-26 15:00:00
 updated: 2020-08-14 05:42:00
 comment: true
-thumbnail: https://i.loli.net/2020/08/03/wQGcCKZiB8Y6gXf.png
+thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/theme-m/thumbnail.webp
 categories:
 - 折腾
 tags:
@@ -80,6 +80,9 @@ You just DO WHAT THE FUCK YOU WANT TO!
 ### 样式测试
 
 以免麻烦，顺手放在这里。
+
+当你凝视着bug，bug也凝视着你
+不能信任那些Terminal或Editor用白底的人
 
 ``` plain
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
