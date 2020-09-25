@@ -25,5 +25,5 @@ gulp.task('minify-inline', function() {
 });
 // task
 gulp.task('default', gulp.series(
-    'minify-html','minify-inline'
+    'minify-inline', 'minify-html'
 ));

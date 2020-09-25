@@ -35,9 +35,6 @@ head:
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin'
     - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Bold.woff2" as="font" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/bg.jpg" as="image" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_192.png" as="image" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_192.png" as="image" crossorigin'
   preconnect:
     - 'href="//cdn.jsdelivr.net"'
     - 'href="//i.loli.net"'
@@ -123,4 +120,4 @@ vendors:
   pangu_js: "https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" # 4.0.7
   busuanzi_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" # 2.3
   serviceworker: 'https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/sw.min.js'
-  webmanifest: data:application/manifest+json,{"name":"./kwaa.dev","short_name":"kwaa.dev","start_url":"/?utm_source=pwa","display":"standalone","description":"AI HOSHIKAWA'S BLOG","orientation":"portrait","background_color":"#2196f3","theme_color":"#2196f3","icons":[{"src":"https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/maskable_icon_512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+  webmanifest: 'ewogICJuYW1lIjogIi4va3dhYS5kZXYiLAogICJzaG9ydF9uYW1lIjogImt3YWEuZGV2IiwKICAic3RhcnRfdXJsIjogIi8/dXRtX3NvdXJjZT1wd2EiLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJkZXNjcmlwdGlvbiI6ICJBSSBIT1NISUtBV0EnUyBCTE9HIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMyMTk2ZjMiLAogICJ0aGVtZV9jb2xvciI6ICIjMjE5NmYzIiwKICAiaWNvbnMiOiBbewogICAgICAic3JjIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9rd2FhL2t3YWEuZ2l0aHViLmlvL3NvdXJjZS9pbWcvbWFza2FibGVfaWNvbl8xOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9LAogICAgewogICAgICAic3JjIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9rd2FhL2t3YWEuZ2l0aHViLmlvL3NvdXJjZS9pbWcvbWFza2FibGVfaWNvbl81MTIucG5nIiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9'
