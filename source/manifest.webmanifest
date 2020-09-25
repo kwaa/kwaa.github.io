@@ -1,7 +1,7 @@
 {
   "name": "./kwaa.dev",
   "short_name": "kwaa.dev",
-  "start_url": "/?utm_source=pwa",
+  "start_url": "https://kwaa.dev/?utm_source=pwa",
   "display": "standalone",
   "description": "AI HOSHIKAWA'S BLOG",
   "orientation": "portrait",
