@@ -11,11 +11,14 @@
         pangu.autoSpacingPage();
         <% } %>
     }
-    window.onload = function () {
+    window.addEventListener("load", () => {
         <% if(theme.plugins.pwa == true) { %>
         if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("<% if(theme.vendors.serviceworker) { %><%- theme.vendors.serviceworker %><% } else { %><%= url_for('/sw.js') %><% } %>");
-        }<% } %>init()}
+            navigator.serviceWorker.register("<% if(theme.vendors.serviceworker) { %><%- theme.vendors.serviceworker %><% } else { %><%= url_for('/sw.js') %><% } %>")
+        }
+        <% } %>
+        init()
+    }, {once: true});
 </script>
 <% if(theme.plugins.pjax == true) { %>
 <%- js(theme.vendors.pjax_js) %>

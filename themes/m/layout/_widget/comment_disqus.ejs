@@ -1,11 +1,11 @@
 <script type="text/javascript">
-    var disqus_config = function () {
+    const disqus_config = () => {
         this.page.url = '<%= page.permalink %>';
         this.page.identifier = '<%= page.path %>';
         this.page.title = '<%= page.title %>';
     };
-    (function () {
-        var disqus = document.createElement('script');
+    (() => {
+        let disqus = document.createElement('script');
         disqus.type = 'text/javascript';
         disqus.async = true;
         disqus.src = '<%- theme.comments.disqus.src %>';

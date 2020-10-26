@@ -1,0 +1,38 @@
+<form action="servlet" method="post" onsubmit="return searchApi(this.searchTerm.value);" class="mdui-textfield mdui-m-b-2">
+    <i class="mdui-icon material-icons">search</i>
+    <input id="searchTerm" type="search" name="q" class="mdui-textfield-input"
+        placeholder="<%= __('common.search') %>">
+</form>
+<div id="search-api-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
+</div>
+<script>
+    if (typeof searchApi === "undefined") var searchApi = (searchTerm) => {
+        $.ajax({
+            type: 'GET',
+            url: '<%= theme.search.api.url %>',
+            data: {
+                q: searchTerm,
+                //<% if(theme.search.api.site !== false) { %>
+                siteSearch: '<% if(theme.search.api.site == "") { %><%= config.root %><% } else { %><%= theme.search.api.site %><% } %>',
+                //<% } if(theme.search.api.key && theme.search.api.id) { %>
+                key: '<%= theme.search.api.key %>',
+                cx: '<%= theme.search.api.id %>',
+                //<% } %>
+            },
+            dataType: 'json',
+            success: data => {
+                $("#search-api-result").html('')
+                data.items.forEach(({title, url, snippet}) => $("#search-api-result").append(`
+                    <a class="mdui-list-item mdui-ripple" href="${url}">
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
+                            <div class="mdui-list-item-text mdui-list-item-two-line">${snippet}</div>
+                        </div>
+                    </a>`)
+                )
+            },
+            error: data => console.error(data)
+        });
+        return false;
+    }
+</script>
