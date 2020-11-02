@@ -1,7 +1,7 @@
 ---
 title: ABOUT / 关于
 date: 2019-10-17 00:00:00
-updated: 2019-12-18 15:40:00
+updated: 2020-11-02 16:55:00
 comment: true
 license: false
 thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/about/universe.png
@@ -10,39 +10,38 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/about/universe
 
 ## kwa@kwaa.dev ~ % cat site
 
-``` plain
-  _|_|      _|_|    OS: Arch Linux x86_64
-_|    _|  _|    _|  Host: Github Pages
+``` yaml
+  _|_|      _|_|    Since: 2019-10-17
+_|    _|  _|    _|  OS: Arch Linux x86_64
   _|_|      _|_|_|  Generator: Hexo
 _|    _|        _|  Theme: M
-  _|_|    _|_|_|    Style: MDUI
-_|_|_|    _|  _|    Since: 2019-10-17
-_|        _|  _|    Url: https://kwaa.dev
-_|_|_|    _|_|_|_|  Title: "./kwaa.dev"
-_|    _|      _|    Descr: "AI HOSHIKAWA's BLOG."
-  _|_|        _|    Uuid: "AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
+  _|_|    _|_|_|    Framework: MDUI
+_|_|_|    _|  _|    Host: GitHub Pages
+_|        _|  _|    Deploy: GitHub Actions
+_|_|_|    _|_|_|_|  Minify: Gulp
+_|    _|      _|    CDN: Cloudflare
+  _|_|        _|    UUID: "AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
 ```
 
 ## kwa@kwaa.dev ~ % cat me
 
-``` markdown
-你好，这是一个没什么内容的打招呼段落。
-如果你想看**更兴趣向的个人主页**，可以转至 kwaa.moe
-如果你想看**我的简历**，可以转至 resume.kwaa.dev
-~~（以上的前提是当你看到时我已经写完并公开了）~~
-姓名：**[DATA EXPUNGED]**
-昵称：**星川 藍 / ほしかわ あい / Hoshikawa Ai**
-标识：**kwaa / nst / yx**
-UUID：**AB7575DD-9E94-B917-85CD-000D7FEBEAAE**
-PUBKEY：**[COMING SOON]**
+你好。
+地球人，现居中华民国大陆沦陷区，目标日本归化；
+如果需要联系我，请使用 ```Telegram @kwaabot && Discord 917#1929```；看到后一般都会回复。
 
-现居中华民国大陆沦陷区，目标日本归化。
-如果你需要联系我，请使用 Telegram；友善消息我看到后都会立即回复。t.me/kwaabot
-本文充当留言板，可以在下面随意留言。
-```
+### 兴趣
 
-[INTP-T · 83.71.65.54.53 - 16Personalities 结果 - 2020/08/12](https://www.16personalities.com/ch/intp-%E4%BA%BA%E6%A0%BC)
-[平等 · 人权 · 劳动 - PolitiScales 结果 - 2020/06/28](https://www.politiscales.net/zh_CN/results/?c0=36&femi=19&c1=5&p1=38&p0=24&m0=43&m1=31&t0=19&t1=43&e0=38&e1=33&j0=62&j1=17&s0=55&s1=17&b0=86&anar=67&prag=100)
+- 👾 PC / VR 游戏 (虽然 VR 设备坏了)
+- 🎶 术力口，Anisong, J-POP
+- 🐧 Linux (常用 Arch & Debian)
+- 👨‍💻 敲代码 (菜, 喜好开源)
+- 🎧 入耳式耳机 DIY (放置中)
+
+### 立场
+
+- 自诩自由意志主义者，认同普世价值；追求资讯自由。
+- [个人无政府主义 (民国派, 全盘西化, 海盗党, 加速主义) - CN Values 结果 - 2020-11-02](https://cnvalues.github.io/results.html#scty=79&econ=45&govt=96&envo=53&sheda=33&shequn=0&rujia=0&mao=0&yinmou=0&difang=0&tese=0&jiasu=100&onegod=0&haidao=83&ruguan=0&jieti=50&nvquan=46&minguo=67&han=0&gongye=0&dengta=100&suijing=0&nimin=50)
+- [平等 · 人权 · 劳动 - PolitiScales 结果 - 2020-06-28](https://www.politiscales.net/zh_CN/results/?c0=36&femi=19&c1=5&p1=38&p0=24&m0=43&m1=31&t0=19&t1=43&e0=38&e1=33&j0=62&j1=17&s0=55&s1=17&b0=86&anar=67&prag=100)
 
 ## kwa@kwaa.dev ~ % cat links
 
@@ -55,24 +54,24 @@ PUBKEY：**[COMING SOON]**
 - "确保域名变更后及时通知" # 留个死链我会很难过
 - "在之前与我至少有一次交流" # 先友后链
 
-满足以上条件可以直接于 tg@kwaabot 或本页申请，我一般都会通过。格式:
-- "标题：你的网站标题"
-- "URL：你的网站 URL"
-- "描述：你的网站描述或副标题，可选"
-- "网站图标/个人头像：图片，由于我的主题样式我推荐提交个人头像"
+那么数据格式:
+- "title：你的网站标题" # 如 XXX的博客 或 XXX
+- "url：你的网站 URL" # 如 https://example.com
+- "descr：你的网站描述或副标题，可选"
+- "avatar：图片，由于我的主题样式我推荐提交个人头像" # url 或 base64
 
-你可以先行或在我确认通过后添加本站友链。以下是一些相关信息:
-- "标题：./kwaa.dev"
-- "URL：https://kwaa.dev"
-- "描述1：AI HOSHIKAWA's BLOG."
-- "描述2：AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
-- "网站图标：如下"
+你可以先行或在我添加后添加本站友链。以下是一些相关信息（两个副标题任选）:
+- "title：./kwaa.dev"
+- "url：https://kwaa.dev"
+- "descr1：AI HOSHIKAWA'S BLOG."
+- "descr2：AB7575DD-9E94-B917-85CD-000D7FEBEAAE"
+- "avatar：如下"
 
-如果你希望使用我的信息而不是本站信息:
-- "标题: 藍"
-- "URL: https://kwaa.dev"
-- "描述: 自己想一个，想不到就用上面那串 UUID 吧"
-- "个人头像：如下"
+如果你希望使用我的信息而不是网站信息:
+- "title：藍"
+- "url：https://kwaa.dev"
+- "descr：自己想一个，想不到就用上面那串 UUID 吧"
+- "avatar：如下"
 ```
 
 目前提供 icon 和 maskable_icon 两种图标，请自行选用。这里只放出常用大小，其他的可以修改 url 获取
@@ -92,11 +91,8 @@ maskable_icon: [192px](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/im
 
 ## kwa@kwaa.dev ~ % cat timeline
 
-``` yaml
-timeline:
-    2015-09: first blog, using WordPress. | destroyed
-    2017-08: second blog, using ZeroNet. | unknown
-    2018-07: third blog, using Typecho. | destroyed
-    2019-10: fourth blog, using Hexo. | blog.917.moe
-    2020-08: fourth blog rebuild. | kwaa.dev
-```
+- 2015-09: 第一个博客, 使用 WordPress. | destroyed
+- 2017-08: 第二个博客, 使用 ZeroNet. | unknown
+- 2018-07: 第三个博客, 使用 Typecho. | destroyed
+- 2019-10: 第四个博客, 使用 Hexo. | blog.917.moe
+- 2020-08: 博客重构. | kwaa.dev
