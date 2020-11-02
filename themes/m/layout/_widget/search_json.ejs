@@ -1,0 +1,38 @@
+<form action="servlet" method="post" onsubmit="return searchJSON();" class="mdui-textfield mdui-m-b-2">
+    <i class="mdui-icon material-icons">search</i>
+    <input id="search-json-input" type="search" name="q" class="mdui-textfield-input"
+        placeholder="<%= __('common.search') %>">
+</form>
+<div id="search-json-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
+</div>
+<script>
+    function searchJSON() {
+        $.ajax({
+            type: 'GET',
+            url: '<% if(theme.search.json.url) { %><%- theme.search.json.url %><% } else { %>https://www.googleapis.com/customsearch/v1<% } %>',
+            data: {
+                q: $("#search-json-input").val(),
+                siteSearch: '<% if(theme.search.json.search_site) { %><%= theme.search.json.search_site %><% } else { %><%= config.root %><% } %>',
+                //<% if(theme.search.json.api_key && theme.search.json.search_id) { %>
+                key: '<%= theme.search.json.api_key %>',
+                cx: '<%= theme.search.json.search_id %>',
+                //<% } %>
+            },
+            dataType: 'json',
+            success: data => {
+                $("#search-json-result").html('')
+                data.items.forEach(item =>
+                    $("#search-json-result").append(`
+                    <a class="mdui-list-item mdui-ripple" href="${item.url}">
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title mdui-list-item-one-line">${item.title}</div>
+                            <div class="mdui-list-item-text mdui-list-item-two-line">${item.snippet}</div>
+                        </div>
+                    </a>`)
+                )
+            },
+            error: data => console.error(data)
+        });
+        return false;
+    }
+</script>
