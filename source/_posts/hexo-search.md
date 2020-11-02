@@ -31,7 +31,7 @@ search:
 
 ## 本地搜索
 
-还是那么些东西，但我真的很不想在自己的主题里放一个，于是索性重新写了一份。
+还是那么些东西，但我真的很不想在自己的主题里放一个带一大串注释的 search.js，于是索性重新写了一份。
 
 样式:
 
@@ -47,7 +47,7 @@ search:
 由于 mdui.min.js 在页尾调用，我创建了两个 EventListener 监听 window.load 和 pjax:success 事件，并通过 ajax 获取 search.json：
 
 ```javascript
-    if (typeof searchLocal === "undefined") var searchLocal = () => {
+    if (typeof searchLocal === "undefined") function searchLocal() {
         $("#local-input").on('keydown', () => {
             if (event.keyCode == 13) return false
         })
@@ -166,7 +166,7 @@ async function search(searchTerm, searchSite) {
 }
 ```
 
-最后是 addEventListener 和 handleRequest：
+最后是 handleRequest：
 
 ```javascript
 async function handleRequest(request) {
@@ -204,7 +204,7 @@ async function handleRequest(request) {
 <div id="search-api-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
 </div>
 <script>
-    if (typeof searchApi === "undefined") var searchApi = (searchTerm) => {
+    if (typeof searchApi === "undefined") function searchApi(searchTerm) {
         $.ajax({
             type: 'GET',
             url: '<%= theme.search.api.url %>',
