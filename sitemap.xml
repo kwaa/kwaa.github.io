@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kwaa.dev/about/index.html</loc>
+    
+    <lastmod>2020-11-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kwaa.dev/links/index.html</loc>
     
     <lastmod>2020-11-02</lastmod>
@@ -23,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://kwaa.dev/p/project-axe-p8/</loc>
-    
-    <lastmod>2020-11-02</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kwaa.dev/p/github-actions-for-hexo/</loc>
     
     <lastmod>2020-11-02</lastmod>
@@ -38,6 +38,13 @@
   
   <url>
     <loc>https://kwaa.dev/p/id-refresh/</loc>
+    
+    <lastmod>2020-11-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kwaa.dev/p/project-axe-p8/</loc>
     
     <lastmod>2020-11-02</lastmod>
     
@@ -110,13 +117,6 @@
     <loc>https://kwaa.dev/p/s3rver/</loc>
     
     <lastmod>2020-02-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kwaa.dev/about/index.html</loc>
-    
-    <lastmod>2019-12-18</lastmod>
     
   </url>
   
