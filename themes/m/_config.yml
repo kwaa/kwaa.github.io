@@ -124,8 +124,8 @@ plugins:
   script:
 
 vendors:
-  mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" # 1.0.0
-  mdui_js: "https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" # 1.0.0
+  mdui_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" # 1.0.1
+  mdui_js: "https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" # 1.0.1
   pjax_js: "https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"
   pangu_js: "https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" # 4.0.7
   busuanzi_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" # 2.3

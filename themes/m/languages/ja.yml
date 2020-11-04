@@ -11,8 +11,8 @@ drawer:
 
 index:
     more: '続きを読む'
-    prev: '<i class="mdui-icon mdui-icon-left material-icons">arrow_back</i>前のページ'
-    next: '<i class="mdui-icon mdui-icon-right material-icons">arrow_forward</i>次のページ'
+    prev: '前のページ'
+    next: '次のページ'
     archive: 'Currently showing articles with archive <b>%s</b>'
     category: 'Currently showing articles with category <b>%s</b>'
     tag: 'Currently showing articles with tag <b>%s</b>'

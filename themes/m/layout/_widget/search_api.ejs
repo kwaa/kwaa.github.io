@@ -22,8 +22,8 @@
             dataType: 'json',
             success: data => {
                 $("#search-api-result").html('')
-                data.items.forEach(({title, url, snippet}) => $("#search-api-result").append(`
-                    <a class="mdui-list-item mdui-ripple" href="${url}">
+                data.items.forEach(({title, link, snippet}) => $("#search-api-result").append(`
+                    <a class="mdui-list-item mdui-ripple" href="${link}">
                         <div class="mdui-list-item-content">
                             <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
                             <div class="mdui-list-item-text mdui-list-item-two-line">${snippet}</div>
