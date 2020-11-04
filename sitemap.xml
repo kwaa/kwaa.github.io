@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kwaa.dev/about/index.html</loc>
-    
-    <lastmod>2020-11-02</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kwaa.dev/links/index.html</loc>
     
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://kwaa.dev/search/index.html</loc>
     
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/index.html</loc>
     
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://kwaa.dev/p/github-actions-for-hexo/</loc>
     
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://kwaa.dev/p/id-refresh/</loc>
     
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     
   </url>
   
   <url>
     <loc>https://kwaa.dev/p/project-axe-p8/</loc>
+    
+    <lastmod>2020-11-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kwaa.dev/about/index.html</loc>
     
     <lastmod>2020-11-02</lastmod>
     
@@ -137,7 +137,7 @@
 
   <url>
     <loc>https://kwaa.dev/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -145,161 +145,161 @@
   
   <url>
     <loc>https://kwaa.dev/tags/DIY/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/IEM/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/%E5%B9%B3%E8%A1%A1%E7%94%B5%E6%9E%A2/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/PWA/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Progressive-Web-Apps/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Instant-View/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Github-Actions/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Hexo/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/CI-CD/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Theme-M/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/%E5%85%A5%E8%80%B3%E5%BC%8F%E8%80%B3%E6%9C%BA/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/NaiveProxy/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Oracle-Cloud/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Pleroma/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Fediverse/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%99%A8/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Arch-Linux/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Rust/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/WebAssembly/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/WASM/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/tags/Node-js/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -308,28 +308,28 @@
   
   <url>
     <loc>https://kwaa.dev/categories/%E9%9F%B3%E9%A2%91/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kwaa.dev/categories/%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2020-11-02</lastmod>
+    <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
