@@ -116,6 +116,8 @@ search:
     site: "kwaa.dev"
     id:
     key:
+  local:
+    url: "https://kwaa.dev/search.json"
 
 plugins:
   pjax: true

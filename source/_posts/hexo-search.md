@@ -32,60 +32,41 @@ search:
 ## 本地搜索
 
 还是那么些东西，但我真的很不想在自己的主题里放一个带一大串注释的 search.js，于是索性重新写了一份。
-
-样式:
+ES6+ 香到我直接不用 mdui.JQ 了。
 
 ```html
-<form class="mdui-textfield mdui-m-b-2">
+<form onkeydown="if (event.keyCode == 13) return false" class="mdui-textfield mdui-m-b-2">
     <i class="mdui-icon material-icons">search</i>
     <input id="local-input" type="search" name="q" class="mdui-textfield-input"
-        placeholder="<%= __('common.search') %>">
+        placeholder="<%= __('common.search') %>" disabled>
 </form>
 <div id="local-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
-```
-
-由于 mdui.min.js 在页尾调用，我创建了两个 EventListener 监听 window.load 和 pjax:success 事件，并通过 ajax 获取 search.json：
-
-```javascript
-    if (typeof searchLocal === "undefined") function searchLocal() {
-        $("#local-input").on('keydown', () => {
-            if (event.keyCode == 13) return false
+</div>
+<script>
+    fetch(`<% if(theme.search.local.url) { %><%- theme.search.local.url %><% } else { %><%- url_for('search.json') %><% } %>`)
+        .then(res => res.json()).then(data => {
+            document.getElementById('local-input').disabled = false
+            document.getElementById('local-input').addEventListener('input', () => {
+                let keyword = document.getElementById('local-input').value.trim().toLowerCase()
+                document.getElementById('local-result').innerHTML = ''
+                if (keyword.length <= 0) return
+                data.forEach(({title, content, url}) => {
+                    const appendPost = content => document.getElementById('local-result').insertAdjacentHTML('beforeend', `
+                        <a href=${url} class="mdui-list-item mdui-ripple">
+                            <div class="mdui-list-item-content">
+                                <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
+                                <div class="mdui-list-item-text mdui-list-item-two-line">${content}</div>
+                            </div>
+                        </a>`)
+                    if (content.toLowerCase().includes(keyword)) appendPost(content.substring((content.toLowerCase().indexOf(keyword) - 9), (content.toLowerCase().indexOf(keyword) + 130)))
+                    else if (title.toLowerCase().includes(keyword)) appendPost(content.substring(0, 139))
+                })
+            })
         })
-        $.ajax({
-            method: 'GET',
-            url: '/search.json',
-            datatype: "json",
-            success: data => {},
-            error: data => console.error(data)
-        })
-        document.removeEventListener("pjax:success", () => searchLocal(), {once: true});
-    }
-    document.addEventListener("pjax:success", () => searchLocal(), {once: true});
-    window.addEventListener("load", () => searchLocal(), {once: true});
+</script>
 ```
 
-虽然看起来挺 dirty 的但它用着没什么问题。接下来往 success 里加料：
-
-```javascript
-$("#search-input").on('input', () => {
-    $("#search-result").html('');
-    let keyword = $("#search-input").val().trim().toLowerCase();
-    if (keyword.length <= 0) { return }
-    JSON.parse(data).forEach(({title, content, url}) => {
-        const appendPost = content => document.getElementById('search-result').insertAdjacentHTML('beforeend', `
-        <a href=${url} class="mdui-list-item mdui-ripple">
-            <div class="mdui-list-item-content">
-                <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
-                <div class="mdui-list-item-text mdui-list-item-two-line">${content}</div>
-            </div>
-        </a>`);
-        if (content.toLowerCase().includes(keyword)) appendPost(content.replace(/<[^>]+>/g, "").substring((content.toLowerCase().indexOf(keyword) -9), (content.toLowerCase().indexOf(keyword) + 130)));
-        else if (title.toLowerCase().includes(keyword)) appendPost(content.replace(/<[^>]+>/g, "").substring(0, 139));
-    })
-})
-```
-
-完成。逻辑基本和原来差别不大，但代码看着简洁了很多。
+完成。逻辑基本和原来差别不大，但 JS 只有不到 20 行。
 
 ## Worker 搜索
 
@@ -196,41 +177,24 @@ async function handleRequest(request) {
 那么在页面里显示结果：
 
 ```html
-<form action="servlet" method="post" onsubmit="return searchApi(this.searchTerm.value);" class="mdui-textfield mdui-m-b-2">
+<form action="servlet" method="post" onsubmit="return searchAPI(this.searchTerm.value);" class="mdui-textfield mdui-m-b-2">
     <i class="mdui-icon material-icons">search</i>
     <input id="searchTerm" type="search" name="q" class="mdui-textfield-input"
         placeholder="<%= __('common.search') %>">
 </form>
-<div id="search-api-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
+<div id="api-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
 </div>
 <script>
-    if (typeof searchApi === "undefined") function searchApi(searchTerm) {
-        $.ajax({
-            type: 'GET',
-            url: '<%= theme.search.api.url %>',
-            data: {
-                q: searchTerm,
-                //<% if(theme.search.api.site !== false) { %>
-                siteSearch: '<% if(theme.search.api.site == "") { %><%= config.root %><% } else { %><%= theme.search.api.site %><% } %>',
-                //<% } if(theme.search.api.key && theme.search.api.id) { %>
-                key: '<%= theme.search.api.key %>',
-                cx: '<%= theme.search.api.id %>',
-                //<% } %>
-            },
-            dataType: 'json',
-            success: data => {
-                $("#search-api-result").html('')
-                data.items.forEach(({title, url, snippet}) => $("#search-api-result").append(`
-                    <a class="mdui-list-item mdui-ripple" href="${url}">
-                        <div class="mdui-list-item-content">
-                            <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
-                            <div class="mdui-list-item-text mdui-list-item-two-line">${snippet}</div>
-                        </div>
-                    </a>`)
-                )
-            },
-            error: data => console.error(data)
-        });
+    function searchAPI(searchTerm) {
+        fetch(`https://search.kwaa.workers.dev/?q=${searchTerm}<% if(theme.search.api.site !== false) { %>&siteSearch=<% if(theme.search.api.site == '') { %><%= config.root %><% } else { %><%= theme.search.api.site %><% }} if (theme.search.api.key && theme.search.api.id) { %>&key=<%= theme.search.api.key %>&cx=<%= theme.search.api.id %><% } %>`)
+        .then(res => res.json()).then(json => json.items.forEach(({title, link, snippet}) => document.getElementById('api-result').insertAdjacentHTML('beforeend', `
+            <a class="mdui-list-item mdui-ripple" href="${link}">
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
+                    <div class="mdui-list-item-text mdui-list-item-two-line">${snippet}</div>
+                </div>
+            </a>`)
+        ))
         return false;
     }
 </script>
