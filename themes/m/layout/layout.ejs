@@ -8,10 +8,8 @@
         return partial ('_partial/drawer');
         }) %>
     </div>
-    <div class="mdui-container-fluid">
-        <main id="main" class="mdui-center" <% if(theme.m.max_width) { %>style="max-width:<%= theme.m.max_width %>"<% } %>>
+    <div class="mdui-container-fluid mdui-center" <% if(theme.m.max_width) { %>style="max-width:<%= theme.m.max_width %>"<% } %>>
         <%- body %>
-        </main>
     </div>
     <%- fragment_cache ('fab', function (){
         return partial ('_partial/fab');

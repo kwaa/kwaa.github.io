@@ -1,4 +1,3 @@
-<div class="mdui-theme-layout-<%= theme.mdui.layout %> mdui-color-transparent">
 <<% if(is_post() || is_page()) { %>article<% } else { %>section<% } %> <%- fragment_cache ('card_style', function (){
     return partial ('_partial/card_style');
 }) %>>
@@ -29,4 +28,3 @@
     </div>
     <% } %>
 </<% if(is_post() || is_page()) { %>article<% } else { %>section<% } %>>
-</div>

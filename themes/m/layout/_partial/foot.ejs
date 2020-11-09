@@ -24,13 +24,14 @@
 <%- js(theme.vendors.pjax_js) %>
 <script>
     var pjax = new Pjax({
-        selectors: ["title","main"],
+        selectors: ["title",".mdui-container-fluid"],
         switches: {
-            "main": function(oldEl, newEl) {
+            ".mdui-container-fluid": function(oldEl, newEl) {
                 $('.mdui-container-fluid').css('opacity', '0');
                 setTimeout(() => {
                     oldEl.innerHTML = newEl.innerHTML;
                     $('.mdui-container-fluid').css('opacity', '1');
+                    console.log(this)
                     this.onSwitch();
                     init();
                 },400);

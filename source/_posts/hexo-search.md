@@ -103,7 +103,7 @@ https://*.workers.dev/?siteSearch=站点&q=关键字
 }
 ```
 
-只有这点内容，也只需要这点内容。
+只需要这点内容。
 
 ### index.js
 
@@ -153,7 +153,7 @@ async function search(searchTerm, searchSite) {
 async function handleRequest(request) {
     const { searchParams } = new URL(request.url)
     let searchTerm = searchParams.get('q'), searchSite
-    if (searchTerm == '') {
+    if (searchTerm == undefined) {
         return new Response("usage:\n\
         ?siteSearch=<site>&q=<keyword>\n\
         required: q", { status: 404 })
@@ -174,7 +174,7 @@ async function handleRequest(request) {
 }
 ```
 
-那么在页面里显示结果：
+在页面里显示结果：
 
 ```html
 <form action="servlet" method="post" onsubmit="return searchAPI(this.searchTerm.value);" class="mdui-textfield mdui-m-b-2">
