@@ -54,7 +54,7 @@
             </div>
         </div>
         <% } if(theme.drawer.tags == true) { %>
-        <a href="<%- url_for(config.tag_dir) %>" class="mdui-list-item mdui-ripple">
+        <a href="<%- url_for(config.tag_dir + '/') %>" class="mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">local_offer</i>
             <div class="mdui-list-item-content"><%= __("common.tag") %></div>
         </a>

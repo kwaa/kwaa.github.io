@@ -44,25 +44,25 @@ ES6+ 香到我直接不用 mdui.JQ 了。
 </div>
 <script>
     fetch(`<% if(theme.search.local.url) { %><%- theme.search.local.url %><% } else { %><%- url_for('search.json') %><% } %>`)
-        .then(res => res.json()).then(data => {
+        .then(res => res.json().then(data => {
             document.getElementById('local-input').disabled = false
             document.getElementById('local-input').addEventListener('input', () => {
                 let keyword = document.getElementById('local-input').value.trim().toLowerCase()
                 document.getElementById('local-result').innerHTML = ''
                 if (keyword.length <= 0) return
                 data.forEach(({title, content, url}) => {
-                    const appendPost = content => document.getElementById('local-result').insertAdjacentHTML('beforeend', `
+                    const append = excerpt => document.getElementById('local-result').insertAdjacentHTML('beforeend', `
                         <a href=${url} class="mdui-list-item mdui-ripple">
                             <div class="mdui-list-item-content">
                                 <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
-                                <div class="mdui-list-item-text mdui-list-item-two-line">${content}</div>
+                                <div class="mdui-list-item-text mdui-list-item-two-line">${excerpt}</div>
                             </div>
                         </a>`)
-                    if (content.toLowerCase().includes(keyword)) appendPost(content.substring((content.toLowerCase().indexOf(keyword) - 9), (content.toLowerCase().indexOf(keyword) + 130)))
-                    else if (title.toLowerCase().includes(keyword)) appendPost(content.substring(0, 139))
+                    if (content.toLowerCase().includes(keyword)) append(content.substring((content.toLowerCase().indexOf(keyword) - 9), (content.toLowerCase().indexOf(keyword) + 130)))
+                    else if (title.toLowerCase().includes(keyword)) append(content.substring(0, 139))
                 })
             })
-        })
+        }))
 </script>
 ```
 
@@ -187,14 +187,14 @@ async function handleRequest(request) {
 <script>
     function searchAPI(searchTerm) {
         fetch(`https://search.kwaa.workers.dev/?q=${searchTerm}<% if(theme.search.api.site !== false) { %>&siteSearch=<% if(theme.search.api.site == '') { %><%= config.root %><% } else { %><%= theme.search.api.site %><% }} if (theme.search.api.key && theme.search.api.id) { %>&key=<%= theme.search.api.key %>&cx=<%= theme.search.api.id %><% } %>`)
-        .then(res => res.json()).then(json => json.items.forEach(({title, link, snippet}) => document.getElementById('api-result').insertAdjacentHTML('beforeend', `
+        .then(res => res.json().then(json => json.items.forEach(({title, link, snippet}) => document.getElementById('api-result').insertAdjacentHTML('beforeend', `
             <a class="mdui-list-item mdui-ripple" href="${link}">
                 <div class="mdui-list-item-content">
                     <div class="mdui-list-item-title mdui-list-item-one-line">${title}</div>
                     <div class="mdui-list-item-text mdui-list-item-two-line">${snippet}</div>
                 </div>
             </a>`)
-        ))
+        )))
         return false;
     }
 </script>

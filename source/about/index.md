@@ -26,7 +26,7 @@ _|    _|      _|    CDN: Cloudflare
 ## kwa@kwaa.dev ~ % cat me
 
 你好。
-地球人，现居中华民国大陆沦陷区，目标日本归化；
+地球人，目标日本归化；
 如果需要联系我，请使用 ```Telegram @kwaabot && Discord 917#1929```；看到后一般都会回复。
 
 ### 兴趣
@@ -40,7 +40,7 @@ _|    _|      _|    CDN: Cloudflare
 ### 立场
 
 - 自诩自由意志主义者，认同普世价值；追求资讯自由。
-- [个人无政府主义 (民国派, 全盘西化, 海盗党, 加速主义) - CN Values 结果 - 2020-11-02](https://cnvalues.github.io/results.html#scty=79&econ=45&govt=96&envo=53&sheda=33&shequn=0&rujia=0&mao=0&yinmou=0&difang=0&tese=0&jiasu=100&onegod=0&haidao=83&ruguan=0&jieti=50&nvquan=46&minguo=67&han=0&gongye=0&dengta=100&suijing=0&nimin=50)
+- [个人无政府主义 - CN Values 结果 - 2020-11-02](https://cnvalues.github.io/results.html#scty=79&econ=45&govt=96&envo=53&sheda=33&shequn=0&rujia=0&mao=0&yinmou=0&difang=0&tese=0&jiasu=100&onegod=0&haidao=83&ruguan=0&jieti=50&nvquan=46&minguo=67&han=0&gongye=0&dengta=100&suijing=0&nimin=50)
 - [平等 · 人权 · 劳动 - PolitiScales 结果 - 2020-06-28](https://www.politiscales.net/zh_CN/results/?c0=36&femi=19&c1=5&p1=38&p0=24&m0=43&m1=31&t0=19&t1=43&e0=38&e1=33&j0=62&j1=17&s0=55&s1=17&b0=86&anar=67&prag=100)
 
 ## kwa@kwaa.dev ~ % cat links
