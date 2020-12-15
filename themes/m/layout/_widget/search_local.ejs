@@ -6,7 +6,7 @@
 <div id="local-result" style="min-height:100vh; transition: all .4s" class="mdui-list">
 </div>
 <script>
-    fetch(`<% if(theme.search.local.url) { %><%- theme.search.local.url %><% } else { %><%- url_for('search.json') %><% } %>`)
+    (async () => await fetch(`<% if(theme.search.local.url) { %><%- theme.search.local.url %><% } else { %><%- url_for('search.json') %><% } %>`)
         .then(res => res.json().then(data => {
             document.getElementById('local-input').disabled = false
             document.getElementById('local-input').addEventListener('input', () => {
@@ -26,4 +26,5 @@
                 })
             })
         }))
+    )()
 </script>

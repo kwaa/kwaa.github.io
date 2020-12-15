@@ -39,10 +39,6 @@ head:
   high_res_icon: "https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_192.png" # 192*192
   apple_touch_icon: "https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/img/icon_180.png" # 180*180
   preload:
-    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/icons/material-icons/MaterialIcons-Regular.woff2" as="font" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin'
-    - 'href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/fonts/roboto/Roboto-Bold.woff2" as="font" crossorigin'
   preconnect:
     - 'href="//cdn.jsdelivr.net"'
   prefetch:
@@ -130,6 +126,5 @@ vendors:
   mdui_js: "https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" # 1.0.1
   pjax_js: "https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"
   pangu_js: "https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" # 4.0.7
-  busuanzi_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" # 2.3
   serviceworker:
   webmanifest: 'data:application/manifest+json;base64,ewogICJuYW1lIjogIi4va3dhYS5kZXYiLAogICJzaG9ydF9uYW1lIjogImt3YWEuZGV2IiwKICAic3RhcnRfdXJsIjogImh0dHBzOi8va3dhYS5kZXYvP3V0bV9zb3VyY2U9cHdhIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiZGVzY3JpcHRpb24iOiAiQUkgSE9TSElLQVdBJ1MgQkxPRyIsCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMjE5NmYzIiwKICAidGhlbWVfY29sb3IiOiAiIzIxOTZmMyIsCiAgImljb25zIjogW3sKICAgICAgInNyYyI6ICJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gva3dhYS9rd2FhLmdpdGh1Yi5pby9zb3VyY2UvaW1nL21hc2thYmxlX2ljb25fMTkyLnBuZyIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gva3dhYS9rd2FhLmdpdGh1Yi5pby9zb3VyY2UvaW1nL21hc2thYmxlX2ljb25fNTEyLnBuZyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIgogICAgfQogIF0KfQ=='
