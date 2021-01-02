@@ -9,7 +9,7 @@ tags:
 - Theme-M
 ---
 
-Theme-M 最近进度不错，就打算把旧版的本地搜索移植过来再加个 Worker 搜索。
+Theme-M 最近进度不错，就打算把旧版的本地搜索移植过来再加个 Worker 搜索。<!-- more -->
 
 ## 用 hexo-generator-search 生成索引
 
