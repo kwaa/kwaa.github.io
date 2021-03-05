@@ -1,11 +1,13 @@
 ---
 title: "如何制作一张 Beat Saber 地图（一）准备篇"
 date: 2021-02-28 22:22:22
-updated: 2020-09-29 00:02:00
+updated: 2021-03-06 05:45:55
 categories:
 - 笔记
 tags:
 - Beat Saber
+- ChroMapper
+- Unity
 thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/beatsaber-mapping-1/beatsaber.jpg
 ---
 最近一直没什么可以拿来写博客的东西，直到我开始想自制 Beat Saber 地图；这是本站第一个连载文章。<!-- more -->
@@ -40,7 +42,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/beatsab
 
 首先下载代码，在 GitHub 的 [master](https://github.com/Caeden117/ChroMapper/tree/master) 或 [dev](https://github.com/Caeden117/ChroMapper/tree/dev) 分支点击 "Code" 后 "Download ZIP" 即可。由于我尝试编译时开发分支报错，所以使用主分支源码。
 
-将下载的压缩包```ChroMapper-dev.zip```解压，得到一个同名文件夹。在 Unity Hub 的 "项目" 中添加项目并选中同名文件夹。导入项目后会是这样：
+将下载的压缩包```ChroMapper-master.zip```解压，得到一个同名文件夹。在 Unity Hub 的 "项目" 中添加项目并选中同名文件夹。导入项目后会是这样：
 
 ![unityhub2](https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/beatsaber-mapping-1/unityhub2.png)
 
@@ -52,10 +54,6 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/beatsab
 
 ## One More Thing
 
-如果你找到这篇文章是想自行编译 ChroMapper，又不想遭支那 Unity 的罪；那么我准备了一份不错的礼物。
+如果你找到这篇文章是想获取 ChroMapper，又不想遭支那 Unity 的罪；那么我准备了一份不错的礼物。
 
-[ipfs://](ipfs://QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z)
-
-[ipfs.io](https://ipfs.io/ipfs/QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z)
-
-[cloudflare-ipfs.com](https://cloudflare-ipfs.com/ipfs/QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z)
+[ipfs://](ipfs://QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z) | [ipfs.io](https://ipfs.io/ipfs/QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z) | [cloudflare-ipfs.com](https://cloudflare-ipfs.com/ipfs/QmZy86M8fB9izJPASdGdTeQdroeGwrjkaguQRkHUTg5VKF?filename=ChroMapper.7z)
