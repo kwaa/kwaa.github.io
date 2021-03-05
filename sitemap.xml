@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kwaa.dev/p/beatsaber-mapping-1/</loc>
+    
+    <lastmod>2021-03-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://kwaa.dev/links/index.html</loc>
     
     <lastmod>2021-03-05</lastmod>
@@ -23,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://kwaa.dev/p/2021/</loc>
-    
-    <lastmod>2021-03-05</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://kwaa.dev/p/github-actions-for-hexo/</loc>
     
     <lastmod>2021-03-05</lastmod>
@@ -38,6 +38,13 @@
   
   <url>
     <loc>https://kwaa.dev/p/project-axe-p8/</loc>
+    
+    <lastmod>2021-03-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kwaa.dev/p/2021/</loc>
     
     <lastmod>2021-03-05</lastmod>
     
@@ -73,13 +80,6 @@
   
   <url>
     <loc>https://kwaa.dev/p/balanced-armature/</loc>
-    
-    <lastmod>2020-09-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://kwaa.dev/p/beatsaber-mapping-1/</loc>
     
     <lastmod>2020-09-29</lastmod>
     
@@ -180,6 +180,20 @@
   
   <url>
     <loc>https://kwaa.dev/tags/Beat-Saber/</loc>
+    <lastmod>2021-03-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kwaa.dev/tags/ChroMapper/</loc>
+    <lastmod>2021-03-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kwaa.dev/tags/Unity/</loc>
     <lastmod>2021-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
