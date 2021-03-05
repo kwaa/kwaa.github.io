@@ -16,13 +16,13 @@ thumbnail: https://cdn.jsdelivr.net/gh/kwaa/kwaa.github.io/source/_posts/beatsab
 
 社区编辑器在 [Wiki](https://bsmg.wiki/mapping/#community-editors) 里列出了三种：MMA2, Beatmapper.map 和 ChroMapper。区别很明显，我当然选择了功能最丰富的 [ChroMapper](https://github.com/Caeden117/ChroMapper)! 它可以通过 Patreon 捐助或自行编译获得，显然我并不会想为了地图编辑器而每个月付出至少 5$。
 
-于是就这样，本文正式从一台 Windows 10 20H1 x64 的电脑开始。
+于是就这样，本文正式从一台 Windows 10 20H1 x64 的电脑起步。
 
 ## Unity
 
 > 很多时间都浪费在安装这脑残软件上。
 
-我参考了 Repo 的 [BUILD.md](https://github.com/Caeden117/ChroMapper/blob/dev/BUILD.md)。~~那么首先我需要安装 [Unity Hub](https://unity3d.com/get-unity/download)~~ 装你妈呢，登录需要绑手机号就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？
+我参考了 Repo 的 [BUILD.md](https://github.com/Caeden117/ChroMapper/blob/dev/BUILD.md)。~~那么首先我需要安装 [Unity Hub](https://unity3d.com/get-unity/download)~~ 装你妈呢，登录需要绑手机号就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？就因为我是支那人？
 
 经过测试，只要一直开着 Netch 就不会被支那特供版恶心到。还好甲骨文 CN2GIA 足够快——于是我顺利通过 ***Google*** 登录了账号，并顺便白嫖了一年 Student Plan。
 
